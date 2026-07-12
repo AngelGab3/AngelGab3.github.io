@@ -20,6 +20,40 @@
     Alice-&gt;&gt;John: Hello John, how are you?
     John--&gt;&gt;Alice: Great!
 </code></pre> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="noopener noreferrer">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank" rel="noopener noreferrer">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/plotly/">a post with plotly.js</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/photo-gallery/">a post with image galleries</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/tabs/">a post with tabs</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/typograms/">a post with typograms</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/post-citation/">a post that can be cited</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/pseudocode/">a post with pseudo code</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/code-diff/">a post with code diff</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/advanced-images/">a post with advanced image components</a> </li> </ul> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ángel Gabriel Munguía Velázquez. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+  (function () {
+    var stored = null;
+    try { stored = localStorage.getItem("site-lang"); } catch (e) {}
+    var lang = stored === "en" ? "en" : "es";
+    document.documentElement.setAttribute("data-lang", lang);
+
+    // El botón muestra el idioma al que cambiarás
+    function labelFor(l) { return l === "en" ? "ES" : "EN"; }
+
+    function insertButton() {
+      var themeBtn = document.getElementById("light-toggle");
+      if (!themeBtn || document.getElementById("lang-toggle")) return;
+      var btn = document.createElement("button");
+      btn.id = "lang-toggle";
+      btn.type = "button";
+      btn.title = "Cambiar idioma / Change language";
+      btn.setAttribute("aria-label", "Cambiar idioma");
+      btn.textContent = labelFor(document.documentElement.getAttribute("data-lang"));
+      btn.addEventListener("click", function () {
+        var next = document.documentElement.getAttribute("data-lang") === "en" ? "es" : "en";
+        document.documentElement.setAttribute("data-lang", next);
+        try { localStorage.setItem("site-lang", next); } catch (e) {}
+        btn.textContent = labelFor(next);
+      });
+      themeBtn.parentNode.insertBefore(btn, themeBtn);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", insertButton);
+    } else {
+      insertButton();
+    }
+  })();
+</script> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -46,7 +80,7 @@ ninja.data = [{
           },
         },{id: "nav-investigaciones",
           title: "Investigaciones",
-          description: "Líneas de investigación en física computacional y astrofísica. · Research in computational physics and astrophysics.",
+          description: "Física computacional y astrofísica. · Computational physics and astrophysics.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/investigaciones/";
@@ -452,17 +486,17 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-asistente-visual-con-ia-infomatrix",
           title: 'Asistente visual con IA — Infomatrix',
-          description: "Asistente visual para personas con discapacidad visual (LLMs multimodales + YOLO). · AI visual assistant for the visually impaired (multimodal LLMs + YOLO).",
+          description: "Asistente para personas con discapacidad visual (LLMs multimodales + YOLO). · Assistant for the visually impaired (multimodal LLMs + YOLO).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_proyecto/";
             },},{id: "projects-nasa-space-apps-challenge",
           title: 'NASA Space Apps Challenge',
-          description: "Núcleo predictivo de IA para calidad del aire y mapeo de exoplanetas. · AI predictive core for air quality and exoplanet mapping.",
+          description: "IA para calidad del aire y mapeo de exoplanetas. · AI for air quality and exoplanet mapping.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_proyecto/";
             },},{id: "projects-robots-limpiadores-de-playa-tmr",
           title: 'Robots limpiadores de playa — TMR',
-          description: "Electrónica y control de robots limpiadores de playa (Arduino → PCBs con ESP32). · Electronics &amp; control for beach-cleaning robots (Arduino → ESP32 PCBs).",
+          description: "Electrónica y control (Arduino → PCBs con ESP32). · Electronics &amp; control (Arduino → ESP32 PCBs).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_proyecto/";
             },},{id: "projects-apps-nativas-ios-swift-challenge",
