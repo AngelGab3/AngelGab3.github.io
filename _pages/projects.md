@@ -2,10 +2,10 @@
 layout: page
 title: Proyectos
 permalink: /proyectos/
-description: Una colección de mis proyectos.
+description: Proyectos de IA, robótica y desarrollo. · AI, robotics and development projects.
 nav: true
 nav_order: 1
-display_categories: [work, fun]
+display_categories: [Inteligencia Artificial, Robótica y Hardware, Desarrollo iOS]
 horizontal: false
 ---
 

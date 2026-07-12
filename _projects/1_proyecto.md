@@ -1,16 +1,14 @@
 ---
 layout: page
-title: Nombre del proyecto
-description: Una línea que resuma de qué trata el proyecto.
-img: assets/img/12.jpg   # cambia por tu imagen en assets/img/
-importance: 1            # ordena los proyectos (1 aparece primero)
-category: destacados
+title: Asistente visual con IA — Infomatrix
+description: Asistente visual para personas con discapacidad visual (LLMs multimodales + YOLO). · AI visual assistant for the visually impaired (multimodal LLMs + YOLO).
+img: assets/img/12.jpg
+importance: 1
+category: Inteligencia Artificial
 ---
 
-Describe aquí tu proyecto: el problema que resolviste, las herramientas que usaste
-(por ejemplo Python, PyTorch, simulaciones numéricas) y los resultados.
+**Español.** Desarrollé un asistente visual con inteligencia artificial para personas con discapacidad visual, integrando **modelos de lenguaje multimodales (LLMs)** con detección de objetos **YOLO**. Construí además una tubería de video de baja latencia sobre Wi-Fi usando un **Arduino UNO Q** para transmitir en tiempo real la cámara. El proyecto obtuvo **medalla de oro** en la final iberoamericana de Infomatrix y clasificación a Infomatrix Argentina 2026.
 
-Puedes enlazar el [repositorio en GitHub](https://github.com/AngelGab3) o una demo.
+**English.** I built an AI visual assistant for the visually impaired, integrating **multimodal LLMs** with **YOLO** object detection, plus a low-latency Wi-Fi video-streaming pipeline on an **Arduino UNO Q** for a real-time webcam feed. The project won a **Gold Medal** at the Ibero-American Infomatrix Final and qualified for Infomatrix Argentina 2026.
 
-<!-- Para agregar más proyectos, copia este archivo como 2_proyecto.md, 3_proyecto.md, etc.
-     Sube tus imágenes a assets/img/ y actualiza el campo "img". -->
+*San Luis Potosí, México · Marzo 2026*

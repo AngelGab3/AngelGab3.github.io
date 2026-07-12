@@ -2,18 +2,16 @@
 layout: page
 title: Certificados
 permalink: /certificados/
-description: Cursos y certificaciones que he obtenido.
+description: Cursos y certificaciones. · Courses and certifications.
 nav: true
 nav_order: 3
 ---
 
-<!-- Edita esta tabla: una fila por certificado. Puedes enlazar el certificado en la columna de nombre. -->
-
-| Certificado | Institución | Año |
+| Certificado / Certificate | Institución / Institution | Año / Year |
 | :--- | :--- | :---: |
-| [Deep Learning Specialization](https://ejemplo.com) | Coursera / DeepLearning.AI | 2025 |
-| Nombre del certificado | Institución | 2024 |
-| Nombre del certificado | Institución | 2023 |
+| Introduction to Deep Learning | University of Colorado Boulder | 2025 |
+| Numerical Methods for Engineers | HKUST | 2025 |
+| TOEFL ITP — Puntaje / Score: 587 | ETS | 2024 |
 
-<!-- Si quieres mostrar la imagen del certificado, sube el archivo a assets/img/
-     y usa:  ![Nombre](/assets/img/mi-certificado.jpg)  -->
+<!-- Para agregar la imagen de un certificado, sube el archivo a assets/img/ y usa:
+     ![Nombre](/assets/img/mi-certificado.jpg) -->

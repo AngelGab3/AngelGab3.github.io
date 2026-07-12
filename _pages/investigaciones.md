@@ -2,26 +2,25 @@
 layout: page
 title: Investigaciones
 permalink: /investigaciones/
-description: Líneas de investigación y trabajos en física computacional.
+description: Líneas de investigación en física computacional y astrofísica. · Research in computational physics and astrophysics.
 nav: true
 nav_order: 2
 ---
 
-<!-- Duplica un bloque "###" por cada investigación. Borra este ejemplo. -->
+### Formación de galaxias a alto corrimiento al rojo con Machine Learning
+### High-redshift galaxy formation with Machine Learning
+*Investigador de licenciatura · Programa de Honores, UDLAP · Ago 2025 – Presente*
 
-### Título de la investigación
-*2025 · Rol (ej. investigador, asistente) · Asesor/a: Nombre*
+**ES.** Investigo la formación de galaxias a alto corrimiento al rojo (*high-redshift*) usando **aprendizaje automático** para refinar modelos predictivos de clasificación.
 
-Descripción breve de la investigación: pregunta que abordas, métodos (por ejemplo
-redes neuronales, simulaciones numéricas) y resultados o avances. Puedes enlazar el
-[reporte o poster](https://ejemplo.com) si lo tienes.
+**EN.** I investigate the formation of high-redshift galaxies, using **machine learning** to refine predictive classification models.
 
 ---
 
-### Otra investigación
-*2024 · Rol*
+### Propiedades magneto-ópticas de compuestos orgánicos (Efecto Faraday)
+### Magneto-optical properties of organic compounds (Faraday Effect)
+*Presentador de póster · 67.º Congreso Nacional de Física, Sociedad Mexicana de Física (SMF) · Chihuahua · Oct 2024*
 
-Descripción breve...
+**ES.** Presenté investigación experimental que caracteriza las propiedades magneto-ópticas de compuestos orgánicos (**Efecto Faraday**) mediante un montaje experimental de diseño propio.
 
-<!-- Cuando tengas publicaciones formales, avísame y activamos la página de
-     "Publications" del tema, que genera la lista automáticamente desde BibTeX. -->
+**EN.** I presented experimental research characterizing the magneto-optical properties of organic compounds (**Faraday Effect**) using a self-designed experimental setup.

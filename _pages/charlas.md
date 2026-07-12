@@ -2,22 +2,23 @@
 layout: page
 title: Pláticas
 permalink: /platicas/
-description: Ponencias, charlas y presentaciones que he dado.
+description: Ponencias y divulgación científica. · Talks and science outreach.
 nav: true
 nav_order: 4
 ---
 
-<!-- Duplica un bloque "###" por cada plática. Borra este ejemplo. -->
+### "Atajos cósmicos" — "Cosmic Shortcuts"
+*Ponente invitado · Domo del Planetario de Puebla, Feria de Puebla 2026 · Mayo 2026*
 
-### Título de la plática
-*Evento o congreso · Lugar · Fecha*
+**ES.** Impartí una conferencia inmersiva de astrofísica dentro del domo principal para grandes audiencias, impulsando el interés público por la ciencia (STEM).
 
-De qué trató tu plática en 1–2 líneas. Puedes enlazar las
-[diapositivas](https://ejemplo.com) o el [video](https://ejemplo.com).
+**EN.** I delivered an immersive astrophysics lecture inside the planetarium's main dome for large public audiences, driving STEM engagement.
 
 ---
 
-### Otra plática
-*Evento · Lugar · Fecha*
+### Póster — 67.º Congreso Nacional de Física (SMF)
+*Presentador · Chihuahua, México · Oct 2024*
 
-Descripción breve...
+**ES.** Presentación de póster sobre propiedades magneto-ópticas (Efecto Faraday). Ver más en [Investigaciones](/investigaciones/).
+
+**EN.** Poster presentation on magneto-optical properties (Faraday Effect). See more in [Research](/investigaciones/).
