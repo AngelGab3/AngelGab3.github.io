@@ -260,3 +260,36 @@ html[data-theme="dark"] body {
 a {
   transition: color 0.15s ease;
 }
+
+/*******************************************************************************
+ * Selector de idioma (ES / EN) — muestra/oculta bloques por idioma
+ ******************************************************************************/
+
+/* Por defecto se ve español; inglés oculto hasta pulsar el botón */
+.lang-en {
+  display: none;
+}
+html[data-lang="en"] .lang-es {
+  display: none;
+}
+html[data-lang="en"] .lang-en {
+  display: block;
+}
+
+/* Botón de idioma, con el mismo estilo del toggle de tema */
+#lang-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--global-text-color);
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  padding: 0 0.45rem;
+  line-height: 1;
+  vertical-align: middle;
+}
+#lang-toggle:hover {
+  color: var(--global-theme-color);
+}
