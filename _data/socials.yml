@@ -1,0 +1,10 @@
+# Redes y enlaces. Se muestran en el orden en que aparecen aquí.
+# Documentación del plugin: https://github.com/george-gca/jekyll-socials
+
+# cv_pdf: /assets/pdf/cv.pdf   # descomenta cuando subas tu CV en PDF a assets/pdf/
+# email: tucorreo@udlap.mx     # descomenta y pon tu correo si quieres mostrarlo
+github_username: AngelGab3      # tu usuario de GitHub
+linkedin_username: ángel-gabriel-munguía-velázquez-53806930a  # la parte final de tu URL de LinkedIn
+# scholar_userid:              # tu ID de Google Scholar (si algún día tienes)
+# orcid_id:                    # tu ORCID (si lo tienes)
+rss_icon: false                # ícono de RSS del blog (lo dejamos apagado)
