@@ -39,35 +39,35 @@ ninja.data = [{
     },
   },{id: "nav-proyectos",
           title: "Proyectos",
-          description: "Una colección de mis proyectos.",
+          description: "Proyectos de IA, robótica y desarrollo. · AI, robotics and development projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/proyectos/";
           },
         },{id: "nav-investigaciones",
           title: "Investigaciones",
-          description: "Líneas de investigación y trabajos en física computacional.",
+          description: "Líneas de investigación en física computacional y astrofísica. · Research in computational physics and astrophysics.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/investigaciones/";
           },
         },{id: "nav-certificados",
           title: "Certificados",
-          description: "Cursos y certificaciones que he obtenido.",
+          description: "Cursos y certificaciones. · Courses and certifications.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/certificados/";
           },
         },{id: "nav-pláticas",
           title: "Pláticas",
-          description: "Ponencias, charlas y presentaciones que he dado.",
+          description: "Ponencias y divulgación científica. · Talks and science outreach.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/platicas/";
           },
         },{id: "nav-talleres",
           title: "Talleres",
-          description: "Talleres que he impartido o en los que he participado.",
+          description: "Talleres impartidos y divulgación. · Workshops taught and outreach.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talleres/";
@@ -450,11 +450,26 @@ ninja.data = [{
             },},{id: "news-lancé-mi-portafolio-aquí-iré-compartiendo-mis-proyectos-e-investigaciones",
           title: '¡Lancé mi portafolio! Aquí iré compartiendo mis proyectos e investigaciones. 🚀',
           description: "",
-          section: "News",},{id: "projects-nombre-del-proyecto",
-          title: 'Nombre del proyecto',
-          description: "Una línea que resuma de qué trata el proyecto.",
+          section: "News",},{id: "projects-asistente-visual-con-ia-infomatrix",
+          title: 'Asistente visual con IA — Infomatrix',
+          description: "Asistente visual para personas con discapacidad visual (LLMs multimodales + YOLO). · AI visual assistant for the visually impaired (multimodal LLMs + YOLO).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_proyecto/";
+            },},{id: "projects-nasa-space-apps-challenge",
+          title: 'NASA Space Apps Challenge',
+          description: "Núcleo predictivo de IA para calidad del aire y mapeo de exoplanetas. · AI predictive core for air quality and exoplanet mapping.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_proyecto/";
+            },},{id: "projects-robots-limpiadores-de-playa-tmr",
+          title: 'Robots limpiadores de playa — TMR',
+          description: "Electrónica y control de robots limpiadores de playa (Arduino → PCBs con ESP32). · Electronics &amp; control for beach-cleaning robots (Arduino → ESP32 PCBs).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_proyecto/";
+            },},{id: "projects-apps-nativas-ios-swift-challenge",
+          title: 'Apps nativas iOS — Swift Challenge',
+          description: "Apps nativas en Swift; finalista nacional. · Native iOS apps in Swift; national finalist.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_proyecto/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
@@ -466,6 +481,13 @@ ninja.data = [{
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/introduction-to-machine-learning/";
             },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%61%6E%67%65%6C.%6D%75%6E%67%75%69%61%76%7A@%75%64%6C%61%70.%6D%78", "_blank");
+        },
+      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
