@@ -228,21 +228,24 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Título/nombre de la portada con degradado (solo en modo oscuro, donde luce) */
-html[data-theme="dark"] .post-title {
-  background: var(--grad-accent);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+html[data-theme="dark"] .post-title,
+html[data-theme="dark"] .post-title a,
+html[data-theme="dark"] h1.post-title {
+  background: var(--grad-accent) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  width: fit-content;
 }
 
 /* Clase utilitaria: envuelve texto con <span class="grad">...</span> para el degradado */
 .grad {
-  background: linear-gradient(100deg, #8b5cf6 0%, #06b6d4 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  background: linear-gradient(100deg, #8b5cf6 0%, #06b6d4 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
 }
 
 /* Resplandor ambiental violeta→cyan de fondo en modo oscuro */
