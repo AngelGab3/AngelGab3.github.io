@@ -4,7 +4,7 @@ title: Certificados
 permalink: /certificados/
 description: Cursos y certificaciones. · Courses and certifications.
 nav: true
-nav_order: 3
+nav_order: 5
 ---
 
 | Certificado / Certificate | Institución / Institution | Año / Year |
