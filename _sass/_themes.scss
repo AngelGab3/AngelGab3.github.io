@@ -293,3 +293,91 @@ html[data-lang="en"] .lang-en {
 #lang-toggle:hover {
   color: var(--global-theme-color);
 }
+
+/*******************************************************************************
+ * Estilo tipo CV (línea de tiempo: fecha a la izquierda + tarjeta) y visor PDF
+ ******************************************************************************/
+
+.cv-entry {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  background-color: var(--global-card-bg-color);
+}
+.cv-entry .cv-date {
+  flex: 0 0 130px;
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--global-theme-color);
+  padding-top: 0.2rem;
+  line-height: 1.3;
+}
+.cv-entry .cv-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.cv-entry .cv-body h4 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+  font-family: "Space Grotesk", "Inter", sans-serif;
+}
+.cv-entry .cv-body .cv-meta {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+.cv-entry .cv-body p {
+  margin: 0 0 0.4rem;
+}
+.cv-entry .cv-body ul {
+  margin: 0.2rem 0 0;
+  padding-left: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .cv-entry {
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.9rem 1rem;
+  }
+  .cv-entry .cv-date {
+    flex-basis: auto;
+  }
+}
+
+/* Visor del PDF del CV */
+.cv-pdf-actions {
+  margin-bottom: 1rem;
+}
+.cv-download-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 8px;
+  color: var(--global-theme-color);
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cv-download-btn:hover {
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+}
+.cv-pdf-frame {
+  width: 100%;
+  height: 85vh;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cv-pdf-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fff;
+}

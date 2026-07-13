@@ -1,12 +1,18 @@
 ---
-layout: cv
-permalink: /cv/
+layout: page
 title: CV
+permalink: /cv/
+description: Curriculum Vitae.
 nav: true
 nav_order: 7
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
 ---
+
+<div class="cv-pdf-actions">
+  <a class="cv-download-btn" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener">
+    Descargar CV (PDF) · Download CV (PDF)
+  </a>
+</div>
+
+<div class="cv-pdf-frame">
+  <iframe src="{{ '/assets/pdf/cv.pdf' | relative_url }}#view=FitH" title="CV — Ángel Gabriel Munguía Velázquez" loading="lazy"></iframe>
+</div>
