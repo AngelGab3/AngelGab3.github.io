@@ -1,0 +1,3 @@
+Nothing should be ignored in this case, as the only change is a modification to an image file (.jpg), which should not be added to .gitignore according to rule #8.
+
+Therefore, the output is empty.
