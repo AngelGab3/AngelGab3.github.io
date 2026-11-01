@@ -13,7 +13,7 @@ github: https://github.com/AngelGab3/LAMBDACODE-Bloom
 Desarrollo de aplicaciones nativas para el ecosistema **Apple (iOS / iPadOS)** con **Swift** y **SwiftUI**, participando en el **Apple Swift Challenge** y el **iOS Development Lab**:
 
 - **Proyecto Bloom (Equipo LambdaCode - UDLAP):** Aplicación móvil nativa diseñada para transformar la conciencia ecológica en hábitos diarios y métricas medibles de impacto ambiental.
-- **Ingeniería de software:** Implementación de patrones de arquitectura modernos (MVVM), optimización de memoria, persistencia local y diseño centrado en el usuario siguiendo las *Human Interface Guidelines (HIG)* de Apple.
+- **Ingeniería de software:** Implementación de patrones de arquitectura modernos (MVVM), optimización de memoria, persistencia local y diseño centrado en el usuario siguiendo las _Human Interface Guidelines (HIG)_ de Apple.
 - **Reconocimiento:** **Finalista Nacional** (5.º lugar regional) en el Hackathon del iOS Development Lab.
 
 <div class="action-links">
@@ -32,7 +32,7 @@ Desarrollo de aplicaciones nativas para el ecosistema **Apple (iOS / iPadOS)** c
 
 {% include event_gallery.liquid folder="2025-05-ios-development-lab" title="Fotos — iOS Development Lab & Hackathon" %}
 
-*Puebla, México · Mayo 2025*
+_Puebla, México · Mayo 2025_
 
 </div>
 
@@ -60,6 +60,6 @@ Native application development for the **Apple ecosystem (iOS / iPadOS)** using 
 
 {% include event_gallery.liquid folder="2025-05-ios-development-lab" title="Photos — iOS Development Lab & Hackathon" %}
 
-*Puebla, Mexico · May 2025*
+_Puebla, Mexico · May 2025_
 
 </div>

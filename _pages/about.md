@@ -33,7 +33,8 @@ latest_posts:
 ¡Hola! Soy **Ángel Gabriel Munguía Velázquez**, estudiante de la Licenciatura en Física dentro del **Programa de Honores** en la [Universidad de las Américas Puebla (UDLAP)](https://www.udlap.mx/) con **Beca de Excelencia Académica STEM (100% de colegiatura)** y promedio de **9.5/10**. Cursé el Bachillerato Internacional (IB Diploma Programme, 34 puntos) en el Bachillerato 5 de Mayo - BUAP.
 
 Mi trabajo se enfoca en la intersección de la **física computacional**, el **deep learning** y la **astrofísica**:
-- 🌌 **Investigación activa:** Desarrollo modelos de deep learning aplicados a la estimación de corrimiento al rojo (*redshift*) en galaxias submilimétricas (SMGs), bajo la supervisión de la **Dra. Milagros Zeballos Rebaza**.
+
+- 🌌 **Investigación activa:** Desarrollo modelos de deep learning aplicados a la estimación de corrimiento al rojo (_redshift_) en galaxias submilimétricas (SMGs), bajo la supervisión de la **Dra. Milagros Zeballos Rebaza**.
 - 🤖 **Hardware y control:** Fui líder de electrónica y control para robots autónomos en el **Torneo Mexicano de Robótica (TMR)**, diseñando desde lógica en Arduino hasta **PCBs personalizadas con microcontroladores ESP32**.
 - 📱 **Inteligencia Artificial y Software:** Desarrollé el asistente visual con IA para personas con discapacidad visual (**Medalla de Oro Internacional en Infomatrix**) e implementaciones de visión artificial, redes neuronales y aplicaciones nativas en Swift para iOS.
 - 📢 **Divulgación científica:** Imparto conferencias (como en el Domo del Planetario de Puebla), talleres de computación cuántica y actividades anuales en la Noche de las Estrellas.
@@ -98,6 +99,7 @@ Explora mis <a href="/proyectos/">proyectos</a>, <a href="/investigaciones/">inv
 Hi! I'm **Ángel Gabriel Munguía Velázquez**, a Physics undergraduate in the **Honors Program** at [Universidad de las Américas Puebla (UDLAP)](https://www.udlap.mx/), supported by a **100% Full Academic Excellence STEM Scholarship** (GPA: **9.5/10**). I completed the International Baccalaureate (IB) Diploma Programme (34 IB points) at Bachillerato 5 de Mayo - BUAP.
 
 My work lies at the intersection of **computational physics**, **machine learning**, and **astrophysics**:
+
 - 🌌 **Active Research:** Developing deep learning models for redshift estimation in submillimeter galaxies (SMGs), supervised by **Dr. Milagros Zeballos Rebaza**.
 - 🤖 **Hardware & Control:** Electronics and control lead for autonomous robots at the **Mexican Robotics Tournament (TMR)**, progressing from Arduino-based systems to **custom PCBs with ESP32 microcontrollers**.
 - 📱 **AI & Software Development:** Built an AI-driven visual assistant for the visually impaired (**International Gold Medal at Infomatrix**), along with computer vision pipelines, neural networks, and native iOS apps in Swift.

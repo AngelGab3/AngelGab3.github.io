@@ -21,6 +21,7 @@ nav_order: 6
     </ul>
 
     {% include event_gallery.liquid folder="2025-voluntariado-imav-mexcir" title="Fotografías de voluntariado en congresos (IMAV & MEXCIR)" %}
+
   </div>
 </div>
 
@@ -40,6 +41,7 @@ nav_order: 6
     </ul>
 
     {% include event_gallery.liquid folder="2025-voluntariado-imav-mexcir" title="Volunteering photographs (IMAV & MEXCIR)" %}
+
   </div>
 </div>
 

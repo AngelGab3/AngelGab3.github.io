@@ -218,11 +218,23 @@ html[data-theme-setting="light"] {
 
 /* Cuerpo con Inter y títulos con Space Grotesk */
 html body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6,
-.post-title, .post-description, .navbar-brand {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.post-description,
+.navbar-brand {
   font-family: "Space Grotesk", "Inter", sans-serif !important;
   letter-spacing: -0.015em;
 }
@@ -307,7 +319,10 @@ html[data-lang="en"] .lang-en {
   border-radius: 12px;
   background-color: var(--global-card-bg-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .cv-entry:hover {
@@ -558,7 +573,9 @@ html[data-lang="en"] .lang-en {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .cert-card:hover {

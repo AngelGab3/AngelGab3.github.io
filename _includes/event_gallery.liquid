@@ -16,14 +16,16 @@
   {% endif %}
 {% endfor %}
 
-{% assign sorted_images = gallery_images | sort: "path" %}
+{% assign sorted_images = gallery_images | sort: 'path' %}
 
 <div class="event-gallery-box">
   {% if include.title %}
     <div class="event-gallery-header">
       <span class="gallery-badge"><i class="fa-solid fa-camera"></i> {{ include.title }}</span>
       {% if sorted_images.size > 0 %}
-        <span class="gallery-count">{{ sorted_images.size }} foto{% if sorted_images.size != 1 %}s{% endif %}</span>
+        <span class="gallery-count">
+          {{- sorted_images.size }} foto{% if sorted_images.size != 1 %}s{% endif -%}
+        </span>
       {% endif %}
     </div>
   {% endif %}
@@ -33,7 +35,7 @@
       {% for img in sorted_images %}
         <div class="event-gallery-card">
           <a href="{{ img.path | relative_url }}" class="event-gallery-link" target="_blank" rel="noopener noreferrer" title="Ver imagen completa">
-            <img src="{{ img.path | relative_url }}" alt="{{ include.title | default: img.name }}" loading="lazy" class="event-gallery-img" />
+            <img src="{{ img.path | relative_url }}" alt="{{ include.title | default: img.name }}" loading="lazy" class="event-gallery-img">
             <div class="event-gallery-overlay">
               <i class="fa-solid fa-magnifying-glass-plus"></i>
             </div>

@@ -1,9 +1,9 @@
 # Redes y enlaces. Se muestran en el orden en que aparecen aquí.
 # Documentación del plugin: https://github.com/george-gca/jekyll-socials
 
-email: angel.munguiavz@udlap.mx   # tu correo de contacto
-github_username: AngelGab3         # tu usuario de GitHub
-linkedin_username: ángel-gabriel-munguía-velázquez-53806930a  # parte final de tu URL de LinkedIn
+email: angel.munguiavz@udlap.mx # tu correo de contacto
+github_username: AngelGab3 # tu usuario de GitHub
+linkedin_username: ángel-gabriel-munguía-velázquez-53806930a # parte final de tu URL de LinkedIn
 # scholar_userid:                  # tu ID de Google Scholar (si algún día tienes)
 # orcid_id:                        # tu ORCID (si lo tienes)
 rss_icon: false

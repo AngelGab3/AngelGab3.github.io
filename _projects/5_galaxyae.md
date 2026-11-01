@@ -13,7 +13,7 @@ github: https://github.com/AngelGab3/GalaxyAE
 Proyectos de investigación y desarrollo de tuberías computacionales para el análisis espectroscópico de galaxias:
 
 - **GalaxyAE:** Agrupamiento de galaxias a partir de sus firmas espectrales mediante redes neuronales profundas (Deep Encoded Self Organizing Maps - DESOM).
-- **MaNGA-DESOM:** Pipeline modularizado y optimizado para la replicación de alta fidelidad de metodologías y figuras científicas del artículo (*Teimoorinia, Archinuk, Woo et al., The Astronomical Journal / arXiv:2112.03425*).
+- **MaNGA-DESOM:** Pipeline modularizado y optimizado para la replicación de alta fidelidad de metodologías y figuras científicas del artículo (_Teimoorinia, Archinuk, Woo et al., The Astronomical Journal / arXiv:2112.03425_).
 - **Enfoque científico:** Reducción no lineal de dimensionalidad y preservación de topología espectral para clasificación morfológica y evolutiva de galaxias.
 
 <div class="action-links">
@@ -40,7 +40,7 @@ Proyectos de investigación y desarrollo de tuberías computacionales para el an
 Computational astrophysics pipelines for spectroscopic galaxy analysis:
 
 - **GalaxyAE:** Clustering galaxies by spectral energy distributions utilizing Deep Encoded Self Organizing Maps (DESOM).
-- **MaNGA-DESOM:** Modularized and optimized pipeline for replication of results and figures from the scientific publication (*Teimoorinia, Archinuk, Woo et al., The Astronomical Journal / arXiv:2112.03425*).
+- **MaNGA-DESOM:** Modularized and optimized pipeline for replication of results and figures from the scientific publication (_Teimoorinia, Archinuk, Woo et al., The Astronomical Journal / arXiv:2112.03425_).
 - **Scientific Focus:** Non-linear dimensionality reduction and spectral topology preservation for galactic morphological classification.
 
 <div class="action-links">

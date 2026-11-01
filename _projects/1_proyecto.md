@@ -32,7 +32,7 @@ Desarrollé un asistente visual inteligente diseñado para proporcionar retroali
 
 {% include event_gallery.liquid folder="2026-03-infomatrix-san-luis" title="Galería de Fotos — Final Infomatrix (San Luis Potosí)" %}
 
-*San Luis Potosí, México · Marzo 2026*
+_San Luis Potosí, México · Marzo 2026_
 
 </div>
 
@@ -60,6 +60,6 @@ Engineered an AI-driven visual assistant providing real-time audio environmental
 
 {% include event_gallery.liquid folder="2026-03-infomatrix-san-luis" title="Photo Gallery — Infomatrix Final (San Luis Potosí)" %}
 
-*San Luis Potosí, Mexico · March 2026*
+_San Luis Potosí, Mexico · March 2026_
 
 </div>

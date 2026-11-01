@@ -30,6 +30,7 @@ nav_order: 2
     </div>
 
     {% include event_gallery.liquid folder="2025-smgs-astrofisica" title="Gráficos y registros de investigación" %}
+
   </div>
 </div>
 
@@ -51,6 +52,7 @@ nav_order: 2
     </div>
 
     {% include event_gallery.liquid folder="2024-10-congreso-smf-chihuahua" title="Fotografías del 67.º Congreso Nacional de Física (Chihuahua)" %}
+
   </div>
 </div>
 
@@ -79,6 +81,7 @@ nav_order: 2
     </div>
 
     {% include event_gallery.liquid folder="2025-smgs-astrofisica" title="Research figures and records" %}
+
   </div>
 </div>
 
@@ -100,6 +103,7 @@ nav_order: 2
     </div>
 
     {% include event_gallery.liquid folder="2024-10-congreso-smf-chihuahua" title="Photos from the 67th National Physics Congress" %}
+
   </div>
 </div>
 

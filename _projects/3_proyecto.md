@@ -30,7 +30,7 @@ Como **líder del subsistema de electrónica y control** en el marco del **Torne
   <span class="tech-pill">Control Autónomo</span>
 </div>
 
-*México · Enero 2025 – Mayo 2026*
+_México · Enero 2025 – Mayo 2026_
 
 </div>
 
@@ -56,6 +56,6 @@ As **Lead of Electronics and Control Systems** for the **Mexican Robotics Tourna
   <span class="tech-pill">Autonomous Control</span>
 </div>
 
-*Mexico · January 2025 – May 2026*
+_Mexico · January 2025 – May 2026_
 
 </div>

@@ -30,6 +30,7 @@ nav_order: 4
     <p>Presentación y defensa de póster experimental sobre propiedades magneto-ópticas de soluciones orgánicas (Efecto Faraday). Ver detalles en <a href="/investigaciones/">Investigaciones</a>.</p>
 
     {% include event_gallery.liquid folder="2024-10-congreso-smf-chihuahua" title="Galería fotográfica — 67.º Congreso Nacional de Física" %}
+
   </div>
 </div>
 
@@ -49,6 +50,7 @@ nav_order: 4
     </div>
 
     {% include event_gallery.liquid folder="2025-2026-talleres-stem-udlap" title="Fotos del Taller de Computación Cuántica" %}
+
   </div>
 </div>
 
@@ -74,6 +76,7 @@ nav_order: 4
     </ul>
 
     {% include event_gallery.liquid folder="2023-2025-noche-de-las-estrellas" title="Galería fotográfica — Noche de las Estrellas" %}
+
   </div>
 </div>
 
@@ -91,6 +94,7 @@ nav_order: 4
     <p>Delivered an immersive physics lecture inside the main dome for large audiences, fostering scientific engagement and interest in STEM disciplines.</p>
 
     {% include event_gallery.liquid folder="2026-05-planetario-puebla" title="Photo Gallery — Puebla Planetarium Dome" %}
+
   </div>
 </div>
 
@@ -102,6 +106,7 @@ nav_order: 4
     <p>Presented experimental research on magneto-optical properties (Faraday Effect) in organic solutions. Details in <a href="/investigaciones/">Research</a>.</p>
 
     {% include event_gallery.liquid folder="2024-10-congreso-smf-chihuahua" title="Photo Gallery — 67th National Physics Congress" %}
+
   </div>
 </div>
 
@@ -121,6 +126,7 @@ nav_order: 4
     </div>
 
     {% include event_gallery.liquid folder="2025-2026-talleres-stem-udlap" title="Quantum Computing Workshop Photos" %}
+
   </div>
 </div>
 
@@ -146,6 +152,7 @@ nav_order: 4
     </ul>
 
     {% include event_gallery.liquid folder="2023-2025-noche-de-las-estrellas" title="Photo Gallery — Night of the Stars" %}
+
   </div>
 </div>
 

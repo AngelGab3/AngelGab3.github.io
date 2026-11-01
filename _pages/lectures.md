@@ -38,6 +38,7 @@ nav_order: 3
       <span class="tech-pill">Optimización Matemática</span>
       <span class="tech-pill">Jupyter Notebooks</span>
     </div>
+
   </div>
 </div>
 
@@ -74,6 +75,7 @@ nav_order: 3
       <span class="tech-pill">Mathematical Optimization</span>
       <span class="tech-pill">Jupyter Notebooks</span>
     </div>
+
   </div>
 </div>
 
