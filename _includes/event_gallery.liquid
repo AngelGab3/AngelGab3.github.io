@@ -1,0 +1,54 @@
+{% comment %}
+  Event Gallery Component
+  Usage: {% include event_gallery.liquid folder="2024-10-congreso-smf-chihuahua" title="Galería SMF 2024" %}
+  Scans site.static_files within assets/img/eventos/<folder>/ and automatically sorts images alphabetically.
+{% endcomment %}
+
+{% assign folder_target = '/assets/img/eventos/' | append: include.folder %}
+{% assign gallery_images = '' | split: '' %}
+
+{% for file in site.static_files %}
+  {% if file.path contains folder_target %}
+    {% assign ext = file.extname | downcase %}
+    {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' or ext == '.gif' %}
+      {% assign gallery_images = gallery_images | push: file %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_images = gallery_images | sort: "path" %}
+
+<div class="event-gallery-box">
+  {% if include.title %}
+    <div class="event-gallery-header">
+      <span class="gallery-badge"><i class="fa-solid fa-camera"></i> {{ include.title }}</span>
+      {% if sorted_images.size > 0 %}
+        <span class="gallery-count">{{ sorted_images.size }} foto{% if sorted_images.size != 1 %}s{% endif %}</span>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if sorted_images.size > 0 %}
+    <div class="event-gallery-grid">
+      {% for img in sorted_images %}
+        <div class="event-gallery-card">
+          <a href="{{ img.path | relative_url }}" class="event-gallery-link" target="_blank" rel="noopener noreferrer" title="Ver imagen completa">
+            <img src="{{ img.path | relative_url }}" alt="{{ include.title | default: img.name }}" loading="lazy" class="event-gallery-img" />
+            <div class="event-gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="event-gallery-empty">
+      <div class="empty-icon"><i class="fa-regular fa-image"></i></div>
+      <div class="empty-text">
+        <strong>Carpeta lista para fotos:</strong>
+        <code>assets/img/eventos/{{ include.folder }}/</code>
+        <p>Coloca aquí tus fotos (JPG, PNG o WEBP) y aparecerán automáticamente ordenadas en este bloque.</p>
+      </div>
+    </div>
+  {% endif %}
+</div>

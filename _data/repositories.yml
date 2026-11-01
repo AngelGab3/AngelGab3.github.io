@@ -1,14 +1,16 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - AngelGab3
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - AngelGab3/Nasa-Space-App-Challenge-2025---STEM-UDLAP
+  - AngelGab3/LAMBDACODE-Bloom
+  - AngelGab3/GalaxyAE
+  - AngelGab3/MaNGA-DESOM
+  - AngelGab3/Deep-Learning-Projects
+  - AngelGab3/Quantum-Computing
+  - AngelGab3/Summer-Lectures-2026.-Deep-Learning-A-Mathematical-Physics-Approach
+  - AngelGab3/sillodromo-chair-control
+  - AngelGab3/Mathematical_Methods_1
+  - AngelGab3/Presentations_Scientific_Poster_template

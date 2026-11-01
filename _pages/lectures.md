@@ -2,33 +2,79 @@
 layout: page
 title: Lectures
 permalink: /lectures/
-description: Cursos completos que he impartido. · Full courses I have taught.
+description: Cursos y series de conferencias especializadas que he diseñado e impartido. · Specialized courses and lecture series designed and delivered.
 nav: true
 nav_order: 3
 ---
 
 <div class="lang lang-es" markdown="1">
 
-### Deep Learning: A Mathematical Physics Approach
-*Instructor · Summer Lectures 2026 · Proyecto en colaboración*
+<div class="cv-entry">
+  <div class="cv-date">Verano 2026 – Presente</div>
+  <div class="cv-body">
+    <h4>Deep Learning: A Mathematical and Physical Approach <span class="badge-honor">Curso Completo</span></h4>
+    <p class="cv-meta">Diseñador del Curso & Instructor · Proyecto Independiente / Colaborativo</p>
+    <p>Serie de cursos y conferencias que conecta de manera rigurosa el <strong>análisis numérico</strong> con los fundamentos físico-matemáticos del <strong>deep learning</strong>. Dirigido a estudiantes de semestres intermedios de física, matemáticas e ingeniería computacional.</p>
+    
+    <ul>
+      <li><strong>Fundamentos analíticos:</strong> Derivación formal de la retropropagación (<em>backpropagation</em>), Jacobianos, Hessianes y superficies de pérdida.</li>
+      <li><strong>Mecánica del aprendizaje:</strong> Espacios de Hilbert, funciones de activación continuas, estabilidad numérica en optimizadores (SGD, Adam, convergencia estocástica).</li>
+      <li><strong>Implementaciones prácticas:</strong> Redes neuronales profundas desde cero en Python y PyTorch aplicadas a sistemas físicos complejos.</li>
+    </ul>
 
-Curso completo de **deep learning** abordado desde el **análisis numérico**, para entender los algoritmos con mayor profundidad y rigor matemático. Impartido junto con un colega como parte de *Summer Lectures 2026*, dirigido a estudiantes de licenciatura de **2.º a 4.º semestre**.
+    <div class="action-links">
+      <a class="btn-repo" href="https://github.com/AngelGab3/Summer-Lectures-2026.-Deep-Learning-A-Mathematical-Physics-Approach" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i> Repositorio del Curso en GitHub
+      </a>
+      <a class="btn-repo" href="https://github.com/AngelGab3/Deep-Learning-Projects" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i> Repositorio Deep-Learning-Projects
+      </a>
+    </div>
 
-Temas: perceptrón, funciones de activación, retropropagación (*backpropagation*), capas y entrenamiento por épocas, entre otros.
-
-*Las grabaciones estarán disponibles próximamente en YouTube.*
+    <div class="tech-pills">
+      <span class="tech-pill">Python</span>
+      <span class="tech-pill">PyTorch</span>
+      <span class="tech-pill">Análisis Numérico</span>
+      <span class="tech-pill">Optimización Matemática</span>
+      <span class="tech-pill">Jupyter Notebooks</span>
+    </div>
+  </div>
+</div>
 
 </div>
 
 <div class="lang lang-en" markdown="1">
 
-### Deep Learning: A Mathematical Physics Approach
-*Instructor · Summer Lectures 2026 · Collaborative project*
+<div class="cv-entry">
+  <div class="cv-date">Summer 2026 – Present</div>
+  <div class="cv-body">
+    <h4>Deep Learning: A Mathematical and Physical Approach <span class="badge-honor">Full Course</span></h4>
+    <p class="cv-meta">Course Designer & Instructor · Independent / Collaborative Project</p>
+    <p>A rigorous lecture series bridging <strong>numerical analysis</strong> with the mathematical and physical foundations of <strong>deep learning</strong>. Designed for undergraduate physics, mathematics, and computing students.</p>
+    
+    <ul>
+      <li><strong>Analytical foundations:</strong> Formal derivation of backpropagation, Jacobians, Hessians, and loss manifolds.</li>
+      <li><strong>Learning mechanics:</strong> Hilbert spaces, continuous activation functions, numerical stability in stochastic optimizers (SGD, Adam).</li>
+      <li><strong>Practical implementations:</strong> Deep neural architectures from scratch using Python and PyTorch applied to physical dynamical systems.</li>
+    </ul>
 
-A full **deep learning** course approached through **numerical analysis**, aimed at understanding the algorithms in greater depth and with mathematical rigor. Co-taught with a colleague as part of *Summer Lectures 2026*, for undergraduate students in their **2nd–4th semester**.
+    <div class="action-links">
+      <a class="btn-repo" href="https://github.com/AngelGab3/Summer-Lectures-2026.-Deep-Learning-A-Mathematical-Physics-Approach" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i> Course Repository on GitHub
+      </a>
+      <a class="btn-repo" href="https://github.com/AngelGab3/Deep-Learning-Projects" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i> Deep-Learning-Projects Repo
+      </a>
+    </div>
 
-Topics: the perceptron, activation functions, backpropagation, layers, and epoch-based training, among others.
-
-*Recordings will be available soon on YouTube.*
+    <div class="tech-pills">
+      <span class="tech-pill">Python</span>
+      <span class="tech-pill">PyTorch</span>
+      <span class="tech-pill">Numerical Analysis</span>
+      <span class="tech-pill">Mathematical Optimization</span>
+      <span class="tech-pill">Jupyter Notebooks</span>
+    </div>
+  </div>
+</div>
 
 </div>

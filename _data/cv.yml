@@ -1,189 +1,206 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  name: Ángel Gabriel Munguía Velázquez
+  label: Physics Undergraduate · Computational Physics & Artificial Intelligence
+  email: angel.munguiavz@udlap.mx
+  phone: (+52) 222 712 1666
+  location: Puebla, Mexico
+  image: "assets/img/prof_pic.jpg"
+  summary: >
+    Physics undergraduate at Universidad de las Américas Puebla (UDLAP), driven by curiosity about how computation and
+    mathematics can help us understand the natural world. Interested in computational physics, machine learning, and quantum computing,
+    with hands-on experience implementing deep learning models, designing experimental setups, and coordinating hardware–software integration.
+    Seeking research opportunities to develop computational methods and models that help explain complex systems, interpret scientific data,
+    and deepen our understanding of the underlying physical processes.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: AngelGab3
+      url: https://github.com/AngelGab3
     - network: LinkedIn
-      username: example
+      username: Gabriel Velazquez
+      url: https://www.linkedin.com/in/ánel-gabriel-munguía-velázquez-53806930a
+    - network: Email
+      username: angel.munguiavz@udlap.mx
+      url: mailto:angel.munguiavz@udlap.mx
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    city: Puebla
+    region: Puebla
+    countryCode: MX
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: Universidad de las Américas Puebla (UDLAP)
+        location: Puebla, Mexico
+        url: https://www.udlap.mx/
+        area: B.S. in Physics, Honors Program
+        studyType: Undergraduate Degree
+        start_date: 2024
+        end_date: Expected May 2028
+        score: "GPA: 9.5/10"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Honors Program: Selective academic track comprising the top 15% of undergraduate students per cohort; culminates in an original research project under faculty supervision."
+          - "Relevant Coursework: Ordinary & Partial Differential Equations, Mathematical Analysis I & II, Numerical Analysis, Modern Physics, Classical Mechanics, Optics, Mathematical Methods for Physics I, Matrix Theory."
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Bachillerato 5 de Mayo - BUAP
+        location: Puebla, Mexico
+        url: https://www.buap.mx/
+        area: International Baccalaureate (IB) Diploma Programme – High School
+        studyType: High School Diploma
+        start_date: 2021
+        end_date: May 2024
+        score: "GPA: 9.5/10 · 34 IB Points"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Graduated with 34 IB points under the rigorous International Baccalaureate curriculum."
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Universidad de las Américas Puebla (UDLAP)
+        position: Undergraduate Researcher – Honors Program
+        location: Puebla, Mexico
+        start_date: Aug 2025
+        end_date: Present
+        summary: "Research supervisor: Dr. Milagros Zeballos Rebaza"
         highlights:
-          - Relativity
-          - Description 2.
+          - "Developing a mentored research project in computational astrophysics: applying deep learning models for redshift estimation in submillimeter galaxies (SMGs)."
+          - "Processing and analyzing multi-wavelength astronomical datasets using Python and TensorFlow for redshift estimation."
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Mexican Robotics Tournament (TMR)
+        position: Electronics and Control Systems Lead
+        location: Mexico
+        start_date: Jan 2025
+        end_date: May 2026
+        summary: "Faculty advisor: Dr. Alejandra Hernández Sánchez"
         highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+          - "Engineered hardware and control systems for autonomous robots, spanning from Arduino-based logic to custom PCBs with ESP32 microcontrollers."
+          - "Integrated sensor arrays and optimized power distribution for autonomous robots."
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - title: "Ibero-American Infomatrix Final — Visual Assistant for the Visually Impaired"
+        role: "AI Developer"
+        location: "San Luis Potosí, Mexico"
+        date: "Mar 2026"
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - "Developed an AI visual assistant integrating multimodal LLMs with YOLO object detection to provide real-time environmental audio feedback."
+          - "Engineered a low-latency video streaming pipeline over Wi-Fi utilizing an Arduino UNO Q to transmit real-time webcam feeds."
+          - "Awarded International Gold Medal and qualified for Argentina 2026."
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - title: "NASA Space Apps Challenge"
+        role: "AI & iOS Developer"
+        location: "Puebla, Mexico"
+        date: "Oct 2024, 2025"
+        highlights:
+          - "2025 (Air Quality): Engineered the predictive core using deep learning (LSTM) and XGBoost for forecasting, and integrated LLMs for a health-focused platform."
+          - "2024 (Exoplanet Mapping): Built a Swift iOS interface for real-time star mapping utilizing open-source NASA datasets, rendering celestial bodies."
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - title: "Apple Swift Challenge & iOS Development Lab"
+        role: "Native iOS App Developer"
+        location: "Puebla, Mexico"
+        date: "May 2025"
+        highlights:
+          - "Built native iOS applications in Swift (Bloom / LambdaCode), applying UI/UX principles for end-to-end deployment in a competitive hackathon environment."
+          - "Awarded National Finalist (5th Place Regional)."
+
+    Conference Presentations:
+      - conference: "67th National Physics Congress (SMF)"
+        role: "Poster Presenter – Experimental Physics"
+        location: "Chihuahua, Mexico"
+        date: "Oct 2024"
+        summary: "Research supervisor: Dr. Carlos Martínez Hipatl"
+        highlights:
+          - "Presented Research: Experimental Characterization of Magneto-Optical Properties in Corn Syrup via the Faraday Effect."
+
+    Scholarships & Awards:
+      - award: "Full Academic Excellence STEM Scholarship (100% Tuition)"
+        institution: "Universidad de las Américas Puebla (UDLAP)"
+        date: "2024 – 2028"
+        description: "Highly competitive merit-based scholarship awarded to top-tier STEM talent, covering full tuition."
+
+      - award: "International Gold Medalist & Argentina 2026 Qualifier"
+        institution: "Ibero-American Infomatrix Final"
+        date: "2026"
+        description: "Awarded top honor in the AI development category for the Visual Assistant project."
+
+      - award: "National Finalist (5th Place Regional)"
+        institution: "iOS Development Lab Hackathon"
+        date: "2025"
+        description: "Selected among top teams nationwide for innovative iOS native app development."
+
+      - award: "National Competitor"
+        institution: "Mexican National Physics Olympiad"
+        date: "2024"
+        description: "Represented the state delegation at the national level."
+
+      - award: "4th Place (State Level)"
+        institution: "Mexican Physics Olympiad"
+        date: "2023"
+        description: "State-level distinction in theoretical and experimental physics problem solving."
+
+    Teaching & Outreach:
+      - title: "Deep Learning: A Mathematical and Physical Approach"
+        role: "Independent Project – Course Designer & Instructor"
+        date: "Summer 2026 – Present"
+        highlights:
+          - "Developing and delivering a lecture series connecting numerical analysis with the mathematical foundations of deep learning."
+
+      - title: "UDLAP Official STEM Representative Team"
+        role: "Inaugural STEM Scholar & Lead Instructor"
+        location: "Puebla, Mexico"
+        date: "May 2025 – Present"
+        highlights:
+          - "Summer 2026: Designed and taught 'A Very Brief Introduction to Quantum Computing', covering the mathematical and physical foundations for 80 high school students."
+          - "Summer 2025: Taught 'Entre historias y juegos STEM', an interactive science communication workshop."
+
+      - title: "Puebla Planetarium Dome / Puebla Fair"
+        role: "Guest Speaker – 'Cosmic Shortcuts'"
+        location: "Puebla, Mexico"
+        date: "May 2026"
+        highlights:
+          - "Delivered an immersive physics lecture for public audiences inside the main dome."
+
+      - title: "'Night of the Stars' Outreach Program"
+        role: "Workshop Designer & Presenter"
+        location: "Puebla, Mexico"
+        date: "Nov 2023, 2024, 2025"
+        highlights:
+          - "Facilitated annual public science workshops for audiences of all ages, covering topics ranging from electromagnetism (2023) to machine learning in astrophysics (2025)."
+
+    Certifications:
+      - title: "Fifth School of Quantum Computing"
+        institution: "Universidad Nacional Autónoma de México (UNAM)"
+        year: "2026"
+
+      - title: "Introduction to Deep Learning"
+        institution: "University of Colorado Boulder"
+        year: "Expected Dec 2026"
+
+      - title: "Python Programming for Quantum Computing"
+        institution: "Packt"
+        year: "July 2026"
+
+      - title: "Math Foundations and Quantum Mechanics Essentials"
+        institution: "Packt"
+        year: "July 2025"
+
+      - title: "Numerical Methods"
+        institution: "The Hong Kong University of Science and Technology (HKUST)"
+        year: "Expected Dec 2026"
+
+      - title: "Python Essentials 1"
+        institution: "Cisco Networking Academy"
+        year: "Dec 2025"
+
+      - title: "TOEFL ITP (Score: 587)"
+        institution: "ETS"
+        year: "2024"
+
+    Skills:
+      - category: "Quantum & Computational Physics"
+        skills: "Qiskit, Numerical Methods, C, MATLAB"
+      - category: "Deep Learning & AI"
+        skills: "Python, PyTorch, TensorFlow, scikit-learn, LLM Integration, Computer Vision (YOLO)"
+      - category: "Hardware & Control"
+        skills: "Custom PCB Design, Microcontrollers (ESP32, Arduino), Raspberry Pi"
+      - category: "Tools"
+        skills: "Visual Studio, PyCharm, Jupyter Notebooks, Google Colab, LaTeX, Git/GitHub"
+      - category: "Languages"
+        skills: "Spanish (Native), English (Fluent – TOEFL ITP: 587)"

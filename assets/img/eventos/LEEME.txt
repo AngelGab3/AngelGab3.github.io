@@ -1,0 +1,44 @@
+===================================================================
+ GUÍA PARA AGREGAR FOTOS DE TUS EVENTOS (ÁNGEL MUNGUÍA)
+===================================================================
+
+¡El sistema de galería es 100% automático!
+
+1. ¿CÓMO AGREGAR FOTOS A UN EVENTO EXISTENTE?
+----------------------------------------------
+Solo arrastra o copia tus fotos (formatos soportados: .jpg, .jpeg, .png, .webp)
+dentro de la carpeta correspondiente:
+
+- assets/img/eventos/2026-05-planetario-puebla/      -> Fotos del Planetario
+- assets/img/eventos/2026-03-infomatrix-san-luis/     -> Fotos de Infomatrix (Oro)
+- assets/img/eventos/2025-2026-talleres-stem-udlap/   -> Taller Cuántica y STEM UDLAP
+- assets/img/eventos/2025-10-nasa-space-apps/         -> NASA Space Apps
+- assets/img/eventos/2025-05-ios-development-lab/     -> Hackathon Apple / iOS Lab
+- assets/img/eventos/2025-voluntariado-imav-mexcir/   -> Voluntariado IMAV y MEXCIR
+- assets/img/eventos/2024-10-congreso-smf-chihuahua/  -> Congreso SMF (Efecto Faraday)
+- assets/img/eventos/2023-2025-noche-de-las-estrellas/-> Noche de las Estrellas
+- assets/img/eventos/2025-smgs-astrofisica/          -> Gráficos / fotos investigación
+
+2. ¿EN QUÉ ORDEN SE MUESTRAN?
+-----------------------------
+El sistema las ordena automáticamente por nombre de archivo.
+Si quieres un orden específico, nómbralas así:
+  01.jpg
+  02.jpg
+  03.png
+  ...
+O también con descripción corta:
+  01_presentacion_domo.jpg
+  02_conferencia.jpg
+
+3. ¿CÓMO CREAR UN NUEVO EVENTO EN EL FUTURO?
+--------------------------------------------
+Paso A: Crea una nueva carpeta en assets/img/eventos/, por ejemplo:
+        assets/img/eventos/2027-mi-nuevo-evento/
+Paso B: Agrega tus fotos adentro.
+Paso C: En cualquier página Markdown (.md) donde quieras mostrar la galería,
+        agrega esta línea:
+        {% include event_gallery.liquid folder="2027-mi-nuevo-evento" title="Mi Nuevo Evento" %}
+
+¡Listo! Al hacer git add, git commit y git push, GitHub compilará el sitio y
+las fotos aparecerán en una cuadrícula responsiva y estilizada con efecto zoom al pasar el cursor.

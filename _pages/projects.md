@@ -2,10 +2,10 @@
 layout: page
 title: Proyectos
 permalink: /proyectos/
-description: Proyectos de IA, robótica y desarrollo. · AI, robotics and development projects.
+description: Proyectos de física computacional, IA, robótica y desarrollo de software. · Projects in computational physics, AI, robotics, and software development.
 nav: true
 nav_order: 1
-display_categories: [Inteligencia Artificial, Robótica y Hardware, Desarrollo iOS]
+display_categories: [Física Computacional, Inteligencia Artificial, Robótica y Hardware, Desarrollo iOS]
 horizontal: false
 ---
 
