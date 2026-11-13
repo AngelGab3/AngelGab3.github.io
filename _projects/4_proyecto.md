@@ -2,7 +2,6 @@
 layout: page
 title: Bloom — Desarrollo Nativo iOS (Swift Challenge)
 description: Apps nativas en Swift; finalista nacional iOS Lab. · Native iOS apps in Swift; national finalist.
-img: assets/img/1.jpg
 importance: 1
 category: Desarrollo iOS
 github: https://github.com/AngelGab3/LAMBDACODE-Bloom

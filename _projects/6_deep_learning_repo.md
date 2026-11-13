@@ -2,7 +2,6 @@
 layout: page
 title: Deep Learning & Topological Manifolds
 description: Aprendizaje no supervisado de representaciones y mapeo de variedades en astrofísica. · Unsupervised representation learning and topological manifold mapping in astrophysics.
-img: assets/img/9.jpg
 importance: 3
 category: Inteligencia Artificial
 github: https://github.com/AngelGab3/Deep-Learning-Projects

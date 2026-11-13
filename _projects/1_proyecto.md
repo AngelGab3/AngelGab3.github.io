@@ -2,7 +2,6 @@
 layout: page
 title: Asistente visual con IA — Infomatrix
 description: Asistente para personas con discapacidad visual (LLMs multimodales + YOLO). · Assistant for the visually impaired (multimodal LLMs + YOLO).
-img: assets/img/12.jpg
 importance: 1
 category: Inteligencia Artificial
 github: https://github.com/AngelGab3

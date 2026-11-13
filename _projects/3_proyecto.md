@@ -2,7 +2,6 @@
 layout: page
 title: Robótica y Sistemas de Control — TMR
 description: Electrónica y control (Arduino → PCBs con ESP32). · Electronics & control (Arduino → ESP32 PCBs).
-img: assets/img/7.jpg
 importance: 1
 category: Robótica y Hardware
 github: https://github.com/AngelGab3/sillodromo-chair-control

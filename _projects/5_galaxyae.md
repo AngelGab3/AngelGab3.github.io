@@ -2,7 +2,6 @@
 layout: page
 title: GalaxyAE & MaNGA-DESOM — Astrofísica y Deep Learning
 description: Agrupamiento de galaxias por espectros con Autoencoders y DESOM. · Galaxy clustering via spectra using Deep Encoded Self Organizing Maps.
-img: assets/img/8.jpg
 importance: 1
 category: Física Computacional
 github: https://github.com/AngelGab3/GalaxyAE

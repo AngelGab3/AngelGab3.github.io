@@ -2,7 +2,6 @@
 layout: page
 title: NASA Space Apps Challenge
 description: IA para calidad del aire y mapeo de exoplanetas. · AI for air quality and exoplanet mapping.
-img: assets/img/3.jpg
 importance: 2
 category: Inteligencia Artificial
 github: https://github.com/AngelGab3/Nasa-Space-App-Challenge-2025---STEM-UDLAP

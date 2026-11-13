@@ -4,9 +4,53 @@ set -euo pipefail
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/distill-override.yml"
 tmp_site="${tmp_dir}/site"
+posts_dir_created=false
+
+if [ ! -d "_posts" ]; then
+  mkdir -p "_posts"
+  posts_dir_created=true
+fi
+
+cat >"_posts/2018-12-22-distill.md" <<'POST'
+---
+layout: distill
+title: a distill-style blog post
+description: an example of a distill-style blog post and main elements
+tags: distill formatting
+giscus_comments: true
+date: 2021-05-22
+featured: true
+mermaid:
+  enabled: true
+  zoomable: true
+code_diff: true
+map: true
+chart:
+  chartjs: true
+  echarts: true
+  vega_lite: true
+tikzjax: true
+typograms: true
+authors:
+  - name: Albert Einstein
+    url: "https://en.wikipedia.org/wiki/Albert_Einstein"
+    affiliations:
+      name: IAS, Princeton
+---
+
+## Distill Test Fixture
+
+$$
+E = mc^2
+$$
+POST
 
 cleanup() {
   rm -rf "${tmp_dir}"
+  rm -f "_posts/2018-12-22-distill.md"
+  if [ "${posts_dir_created}" = true ]; then
+    rmdir "_posts" 2>/dev/null || true
+  fi
 }
 trap cleanup EXIT
 

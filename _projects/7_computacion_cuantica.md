@@ -2,7 +2,6 @@
 layout: page
 title: Computación Cuántica — Implementaciones & Notas
 description: Algoritmos cuánticos, compuertas lógicas y cuadernos de Qiskit. · Quantum algorithms, logic gates, and Qiskit notebooks.
-img: assets/img/10.jpg
 importance: 2
 category: Física Computacional
 github: https://github.com/AngelGab3/Quantum-Computing
