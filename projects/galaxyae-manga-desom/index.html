@@ -1,0 +1,182 @@
+<!DOCTYPE html> <html lang="es"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> GalaxyAE &amp; MaNGA-DESOM — Astrofísica y Deep Learning | Ángel Munguía </title> <meta name="author" content="Ángel Gabriel Munguía Velázquez"> <meta name="description" content="Agrupamiento espectral de galaxias con Autoencoders y mapas autoorganizados profundos (DESOM)."> <meta name="keywords" content="física computacional, deep learning, UDLAP, portafolio, machine learning"> <meta property="og:site_name" content="Ángel Munguía"> <meta property="og:type" content="website"> <meta property="og:title" content="Ángel Munguía | GalaxyAE &amp; MaNGA-DESOM — Astrofísica y Deep Learning"> <meta property="og:url" content="https://angelgab3.github.io/projects/galaxyae-manga-desom/"> <meta property="og:description" content="Agrupamiento espectral de galaxias con Autoencoders y mapas autoorganizados profundos (DESOM)."> <meta property="og:image" content="/assets/img/prof_pic.jpg"> <meta property="og:locale" content="es"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="GalaxyAE &amp; MaNGA-DESOM — Astrofísica y Deep Learning"> <meta name="twitter:description" content="Agrupamiento espectral de galaxias con Autoencoders y mapas autoorganizados profundos (DESOM)."> <meta name="twitter:image" content="/assets/img/prof_pic.jpg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Ángel Gabriel Munguía Velázquez"
+        },
+        "url": "https://angelgab3.github.io/projects/galaxyae-manga-desom/",
+        "@type": "WebSite",
+        "description": "Agrupamiento espectral de galaxias con Autoencoders y mapas autoorganizados profundos (DESOM).",
+        "headline": "GalaxyAE & MaNGA-DESOM — Astrofísica y Deep Learning",
+        
+        "sameAs": ["https://github.com/AngelGab3","https://www.linkedin.com/in/ángel-gabriel-munguía-velázquez-53806930a"],
+        
+        "name": "Ángel Gabriel Munguía Velázquez",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Inter:300,400,500,600,700|Space+Grotesk:400,500,600,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://angelgab3.github.io/projects/galaxyae-manga-desom/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> <script>(function(){try{var l=localStorage.getItem('site-lang');if(l!=='en'&&l!=='es'){l='es';}document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l);}catch(e){document.documentElement.setAttribute('data-lang','es');}})();</script> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.css" crossorigin="anonymous"> <link rel="stylesheet" href="/assets/css/custom.css"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Ángel Munguía </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">Inicio </a> </li> <li class="nav-item "> <a class="nav-link" href="/proyectos/">Proyectos </a> </li> <li class="nav-item "> <a class="nav-link" href="/investigaciones/">Investigaciones </a> </li> <li class="nav-item "> <a class="nav-link" href="/lectures/">Lectures </a> </li> <li class="nav-item "> <a class="nav-link" href="/platicas-talleres/">Pláticas y Talleres </a> </li> <li class="nav-item "> <a class="nav-link" href="/certificados/">Certificados </a> </li> <li class="nav-item "> <a class="nav-link" href="/galeria/">Galería </a> </li> <li class="nav-item "> <a class="nav-link" href="/voluntariado/">Voluntariado </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">GalaxyAE &amp; MaNGA-DESOM — Astrofísica y Deep Learning</h1> <p class="post-description">Agrupamiento espectral de galaxias con Autoencoders y mapas autoorganizados profundos (DESOM).</p> </header> <article> <div class="lang lang-es"> <p>Proyectos de desarrollo e implementación computacional aplicados al análisis espectroscópico en astrofísica:</p> <ul> <li> <strong>GalaxyAE:</strong> Agrupamiento de galaxias a partir de sus espectros mediante redes neuronales profundas (Autoencoders y mapas autoorganizados profundos — DESOM).</li> <li> <strong>MaNGA-DESOM:</strong> Flujo de trabajo modularizado para replicación computacional de resultados de clasificación espectral de galaxias (<em>Teimoorinia, Archinuk, Woo et al., arXiv:2112.03425</em>).</li> <li> <strong>Enfoque:</strong> Reducción no lineal de dimensionalidad y preservación topológica en conjuntos de datos astronómicos multifrecuencia.</li> </ul> <div class="action-links"> <a class="btn-repo" href="https://github.com/AngelGab3/GalaxyAE" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> Repositorio GalaxyAE </a> <a class="btn-repo" href="https://github.com/AngelGab3/MaNGA-DESOM" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> Repositorio MaNGA-DESOM </a> </div> <div class="tech-pills"> <span class="tech-pill">Astrofísica Computacional</span> <span class="tech-pill">Deep Learning</span> <span class="tech-pill">Autoencoders</span> <span class="tech-pill">DESOM</span> <span class="tech-pill">Python</span> </div> </div> <div class="lang lang-en"> <p>Computational astrophysics implementations for spectroscopic galaxy analysis:</p> <ul> <li> <strong>GalaxyAE:</strong> Galaxy clustering by spectral signatures using deep neural architectures (Autoencoders and Deep Embedded Self-Organizing Maps — DESOM).</li> <li> <strong>MaNGA-DESOM:</strong> Modular pipeline reproducing spectral classification experiments (<em>Teimoorinia, Archinuk, Woo et al., arXiv:2112.03425</em>).</li> <li> <strong>Focus:</strong> Non-linear dimensionality reduction and topology preservation in multi-wavelength astronomical datasets.</li> </ul> <div class="action-links"> <a class="btn-repo" href="https://github.com/AngelGab3/GalaxyAE" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> GalaxyAE Repository </a> <a class="btn-repo" href="https://github.com/AngelGab3/MaNGA-DESOM" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> MaNGA-DESOM Repository </a> </div> <div class="tech-pills"> <span class="tech-pill">Computational Astrophysics</span> <span class="tech-pill">Deep Learning</span> <span class="tech-pill">Autoencoders</span> <span class="tech-pill">DESOM</span> <span class="tech-pill">Python</span> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ángel Gabriel Munguía Velázquez. Desarrollado con <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> y basado en <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a>. Alojado en <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-inicio",
+    title: "Inicio",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-proyectos",
+          title: "Proyectos",
+          description: "Proyectos en física computacional, inteligencia artificial, robótica y desarrollo de software.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/proyectos/";
+          },
+        },{id: "nav-investigaciones",
+          title: "Investigaciones",
+          description: "Física computacional, astrofísica observacional y física experimental.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/investigaciones/";
+          },
+        },{id: "nav-lectures",
+          title: "Lectures",
+          description: "Cursos y series de conferencias especializadas que he diseñado e impartido.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/lectures/";
+          },
+        },{id: "nav-pláticas-y-talleres",
+          title: "Pláticas y Talleres",
+          description: "Ponencias, divulgación científica y talleres impartidos.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/platicas-talleres/";
+          },
+        },{id: "nav-certificados",
+          title: "Certificados",
+          description: "Educación continua, escuelas científicas y certificaciones profesionales.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/certificados/";
+          },
+        },{id: "nav-galería",
+          title: "Galería",
+          description: "Registro fotográfico de congresos, conferencias, talleres y competencias científicas.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/galeria/";
+          },
+        },{id: "nav-voluntariado",
+          title: "Voluntariado",
+          description: "Participación como staff técnico y voluntario en congresos internacionales y eventos científicos.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/voluntariado/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Currículum Vitae académico de Ángel Gabriel Munguía Velázquez.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "projects-deep-learning-amp-topological-manifolds",
+          title: 'Deep Learning &amp;amp; Topological Manifolds',
+          description: "Aprendizaje no supervisado de representaciones y mapeo geométrico en datos físicos y astrofísicos.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/deep-learning-manifolds/";
+            },},{id: "projects-galaxyae-amp-manga-desom-astrofísica-y-deep-learning",
+          title: 'GalaxyAE &amp;amp; MaNGA-DESOM — Astrofísica y Deep Learning',
+          description: "Agrupamiento espectral de galaxias con Autoencoders y mapas autoorganizados profundos (DESOM).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/galaxyae-manga-desom/";
+            },},{id: "projects-asistente-visual-con-ia-infomatrix",
+          title: 'Asistente visual con IA — Infomatrix',
+          description: "Asistente para personas con discapacidad visual (LLMs multimodales + YOLO + Arduino UNO Q).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/infomatrix-visual-assistant/";
+            },},{id: "projects-desarrollo-nativo-ios-apple-swift-challenge-amp-ios-lab",
+          title: 'Desarrollo Nativo iOS — Apple Swift Challenge &amp;amp; iOS Lab',
+          description: "Aplicaciones nativas en Swift y SwiftUI; Finalista Nacional (5.º lugar regional) en iOS Development Lab.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ios-swift-challenge/";
+            },},{id: "projects-nasa-space-apps-challenge",
+          title: 'NASA Space Apps Challenge',
+          description: "IA para pronóstico de calidad del aire (LSTM + XGBoost + LLMs) y mapeo de exoplanetas en Swift iOS.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/nasa-space-apps/";
+            },},{id: "projects-computación-cuántica-implementaciones-y-notas",
+          title: 'Computación Cuántica — Implementaciones y Notas',
+          description: "Algoritmos cuánticos, compuertas unitarias, simulación en esfera de Bloch y cuadernos en Qiskit.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/quantum-computing/";
+            },},{id: "projects-robótica-y-sistemas-de-control-tmr",
+          title: 'Robótica y Sistemas de Control — TMR',
+          description: "Electrónica y control para robots autónomos (Arduino a PCBs personalizadas con ESP32).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/tmr-robotics-control/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%61%6E%67%65%6C.%6D%75%6E%67%75%69%61%76%7A@%75%64%6C%61%70.%6D%78", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/AngelGab3", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/ángel-gabriel-munguía-velázquez-53806930a", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> <script src="/assets/js/site-enhancements.js" defer></script> </body> </html>
