@@ -79,6 +79,64 @@
         en: "Academic Curriculum Vitae of Ángel Gabriel Munguía Velázquez.",
       },
     },
+    "/projects/infomatrix-visual-assistant/": {
+      title: { es: "Asistente visual con IA — Infomatrix", en: "AI Visual Assistant — Infomatrix" },
+      desc: {
+        es: "Asistente visual con IA para personas con discapacidad visual (LLMs multimodales, YOLO y Arduino UNO Q). Medalla de Oro Internacional.",
+        en: "AI visual assistant for the visually impaired (multimodal LLMs, YOLO, and Arduino UNO Q). International Gold Medal.",
+      },
+    },
+    "/projects/nasa-space-apps/": {
+      title: { es: "NASA Space Apps Challenge", en: "NASA Space Apps Challenge" },
+      desc: {
+        es: "Núcleo predictivo de calidad del aire (LSTM, XGBoost y LLMs) en 2025 y visualización estelar en Swift iOS en 2024.",
+        en: "Predictive air quality core (LSTM, XGBoost, and LLMs) in 2025 and real-time star mapping in Swift iOS in 2024.",
+      },
+    },
+    "/projects/tmr-robotics-control/": {
+      title: { es: "Robótica y Sistemas de Control — TMR", en: "Robotics & Control Systems — TMR" },
+      desc: {
+        es: "Diseño de hardware y sistemas de control para robots autónomos en el Torneo Mexicano de Robótica (PCBs con ESP32).",
+        en: "Hardware and control systems engineering for autonomous robots at the Mexican Robotics Tournament (custom ESP32 PCBs).",
+      },
+    },
+    "/projects/ios-swift-challenge/": {
+      title: {
+        es: "Desarrollo Nativo iOS — Apple Swift Challenge & iOS Lab",
+        en: "Native iOS Development — Apple Swift Challenge & iOS Lab",
+      },
+      desc: {
+        es: "Aplicaciones nativas en Swift y SwiftUI; Finalista Nacional (5.º lugar regional) en iOS Development Lab.",
+        en: "Native iOS applications in Swift and SwiftUI; National Finalist (5th regional place) at iOS Development Lab.",
+      },
+    },
+    "/projects/galaxyae-manga-desom/": {
+      title: {
+        es: "GalaxyAE & MaNGA-DESOM — Astrofísica y Deep Learning",
+        en: "GalaxyAE & MaNGA-DESOM — Computational Astrophysics",
+      },
+      desc: {
+        es: "Tuberías computacionales para agrupamiento de galaxias por sus espectros mediante Autoencoders y DESOM.",
+        en: "Computational astrophysics pipelines for spectroscopic galaxy clustering using Autoencoders and DESOM.",
+      },
+    },
+    "/projects/deep-learning-manifolds/": {
+      title: { es: "Deep Learning & Variedades Topológicas", en: "Deep Learning & Topological Manifolds" },
+      desc: {
+        es: "Aprendizaje no supervisado de representaciones y mapeo geométrico en datos físicos y astrofísicos.",
+        en: "Unsupervised representation learning and manifold mapping implementations for astrophysical and physical datasets.",
+      },
+    },
+    "/projects/quantum-computing/": {
+      title: {
+        es: "Computación Cuántica — Implementaciones y Notas",
+        en: "Quantum Computing — Implementations & Notes",
+      },
+      desc: {
+        es: "Algoritmos cuánticos, compuertas unitarias, simulación en esfera de Bloch y cuadernos en Qiskit.",
+        en: "Qiskit notebooks, quantum gates, circuit simulation, and mathematical derivations of quantum algorithms.",
+      },
+    },
   };
 
   function normalizePath(href) {
