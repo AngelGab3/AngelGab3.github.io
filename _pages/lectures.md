@@ -2,24 +2,23 @@
 layout: page
 title: Lectures
 permalink: /lectures/
-description: Cursos y series de conferencias especializadas que he diseñado e impartido. · Specialized courses and lecture series designed and delivered.
+description: Cursos y series de conferencias especializadas que he diseñado e impartido.
 nav: true
 nav_order: 3
 ---
 
-<div class="lang lang-es" markdown="1">
+<div class="lang lang-es">
 
 <div class="cv-entry">
   <div class="cv-date">Verano 2026 – Presente</div>
   <div class="cv-body">
-    <h4>Deep Learning: A Mathematical and Physical Approach <span class="badge-honor">Curso Completo</span></h4>
-    <p class="cv-meta">Diseñador del Curso & Instructor · Proyecto Independiente / Colaborativo</p>
-    <p>Serie de cursos y conferencias que conecta de manera rigurosa el <strong>análisis numérico</strong> con los fundamentos físico-matemáticos del <strong>deep learning</strong>. Dirigido a estudiantes de semestres intermedios de física, matemáticas e ingeniería computacional.</p>
-    
+    <h4>Deep Learning: A Mathematical and Physical Approach <span class="badge-honor">Serie de Conferencias</span></h4>
+    <p class="cv-meta">Proyecto Independiente · Diseñador del Curso e Instructor</p>
+    <p>Serie de conferencias que conecta el <strong>análisis numérico</strong> con los fundamentos matemáticos del <strong>deep learning</strong>, orientada a estudiantes de física, matemáticas e ingeniería computacional.</p>
     <ul>
-      <li><strong>Fundamentos analíticos:</strong> Derivación formal de la retropropagación (<em>backpropagation</em>), Jacobianos, Hessianes y superficies de pérdida.</li>
-      <li><strong>Mecánica del aprendizaje:</strong> Espacios de Hilbert, funciones de activación continuas, estabilidad numérica en optimizadores (SGD, Adam, convergencia estocástica).</li>
-      <li><strong>Implementaciones prácticas:</strong> Redes neuronales profundas desde cero en Python y PyTorch aplicadas a sistemas físicos complejos.</li>
+      <li><strong>Fundamentos analíticos:</strong> Derivación formal de la retropropagación (<em>backpropagation</em>), Jacobianos, Hessianos y superficies de pérdida.</li>
+      <li><strong>Mecánica del aprendizaje:</strong> Espacios de Hilbert, estabilidad numérica y dinámica de optimizadores (SGD, Adam).</li>
+      <li><strong>Implementaciones prácticas:</strong> Redes neuronales profundas en Python y PyTorch aplicadas a sistemas físicos.</li>
     </ul>
 
     <div class="action-links">
@@ -44,19 +43,18 @@ nav_order: 3
 
 </div>
 
-<div class="lang lang-en" markdown="1">
+<div class="lang lang-en">
 
 <div class="cv-entry">
   <div class="cv-date">Summer 2026 – Present</div>
   <div class="cv-body">
-    <h4>Deep Learning: A Mathematical and Physical Approach <span class="badge-honor">Full Course</span></h4>
-    <p class="cv-meta">Course Designer & Instructor · Independent / Collaborative Project</p>
-    <p>A rigorous lecture series bridging <strong>numerical analysis</strong> with the mathematical and physical foundations of <strong>deep learning</strong>. Designed for undergraduate physics, mathematics, and computing students.</p>
-    
+    <h4>Deep Learning: A Mathematical and Physical Approach <span class="badge-honor">Lecture Series</span></h4>
+    <p class="cv-meta">Independent Project · Course Designer &amp; Instructor</p>
+    <p>Developing and delivering a lecture series connecting <strong>numerical analysis</strong> with the mathematical foundations of <strong>deep learning</strong>.</p>
     <ul>
-      <li><strong>Analytical foundations:</strong> Formal derivation of backpropagation, Jacobians, Hessians, and loss manifolds.</li>
-      <li><strong>Learning mechanics:</strong> Hilbert spaces, continuous activation functions, numerical stability in stochastic optimizers (SGD, Adam).</li>
-      <li><strong>Practical implementations:</strong> Deep neural architectures from scratch using Python and PyTorch applied to physical dynamical systems.</li>
+      <li><strong>Analytical foundations:</strong> Formal derivation of backpropagation, Jacobians, Hessians, and loss landscapes.</li>
+      <li><strong>Learning mechanics:</strong> Hilbert spaces, numerical stability, and convergence behavior in stochastic optimizers (SGD, Adam).</li>
+      <li><strong>Practical implementations:</strong> Deep neural architectures implemented in Python and PyTorch for physical systems.</li>
     </ul>
 
     <div class="action-links">

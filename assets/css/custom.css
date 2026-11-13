@@ -423,9 +423,41 @@ html[data-theme="dark"] .event-gallery-box {
   }
 }
 
-/* Visor del PDF del CV */
+/* Visor del PDF del CV y tarjeta de proyectos */
+.projects .card {
+  position: relative;
+}
+
+.projects .stretched-link::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+}
+
+.cv-header-bar {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  background: rgba(124, 58, 237, 0.06);
+  border: 1px solid rgba(124, 58, 237, 0.22);
+}
+
+.cv-header-bar h3 {
+  margin: 0 0 0.4rem;
+}
+
+.cv-subtitle {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
 .cv-pdf-actions {
-  margin-bottom: 1rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .cv-download-btn {

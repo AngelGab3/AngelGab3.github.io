@@ -7,7 +7,7 @@ first_name: Ángel
 middle_name: Gabriel
 last_name: Munguía Velázquez
 contact_note: >
-  La mejor forma de contactarme es por LinkedIn o correo.
+  <span class="lang-es">La mejor forma de contactarme es por LinkedIn o correo institucional.</span><span class="lang-en">Best way to reach me is via LinkedIn or institutional email.</span>
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Portafolio académico de Ángel Gabriel Munguía Velázquez — Estudiante de Física (Programa de Honores, UDLAP). Física computacional, aprendizaje profundo, astrofísica y computación cuántica.
 footer_text: >
