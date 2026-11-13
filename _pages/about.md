@@ -8,7 +8,7 @@ subtitle: >
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true
+  image_circular: false
   more_info: >
     <p><strong>Ángel Gabriel Munguía Velázquez</strong></p>
     <p class="lang-es">Programa de Honores · UDLAP</p>
