@@ -6,6 +6,9 @@ on:
       - master
       - main
     paths:
+      - ".nojekyll"
+      - "_data/**"
+      - "_plugins/**"
       - "assets/**"
       - "**.bib"
       - "**.html"
@@ -15,6 +18,7 @@ on:
       - "**.yml"
       - "Gemfile"
       - "Gemfile.lock"
+      - "purgecss.config.js"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -33,6 +37,9 @@ on:
       - master
       - main
     paths:
+      - ".nojekyll"
+      - "_data/**"
+      - "_plugins/**"
       - "assets/**"
       - "**.bib"
       - "**.html"
@@ -42,6 +49,7 @@ on:
       - "**.yml"
       - "Gemfile"
       - "Gemfile.lock"
+      - "purgecss.config.js"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -97,6 +105,7 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+          touch _site/.nojekyll
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
@@ -106,3 +115,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+          clean: true

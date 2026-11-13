@@ -1,219 +1,23 @@
 /*******************************************************************************
- * Themes
+ * Personalización de Ángel Gabriel Munguía Velázquez
+ * Paleta violeta -> cyan, tipografía académica, selector bilingüe ES/EN,
+ * tarjetas CV, certificaciones y galería de eventos.
  ******************************************************************************/
-@use "variables" as v;
-@use "sass:color";
 
 :root {
-  color-scheme: light;
-  --global-bg-color: #{v.$white-color};
-  --global-code-bg-color: #{v.$code-bg-color-light};
-  --global-text-color: #{v.$black-color};
-  --global-text-color-light: #{v.$grey-color};
   --global-theme-color: #7c3aed;
   --global-hover-color: #0891b2;
-  --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-dark};
-  --global-footer-text-color: #{v.$grey-color-light};
-  --global-footer-link-color: #{v.$white-color};
-  --global-distill-app-color: #{v.$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{v.$white-color};
-  --global-highlight-color: #{v.$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel(v.$black-color, "red", v.$space: rgb)},
-    #{color.channel(v.$black-color, "green", v.$space: rgb)},
-    #{color.channel(v.$black-color, "blue", v.$space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{v.$white-color};
-  --global-newsletter-bg-color: #{v.$white-color};
-  --global-newsletter-text-color: #{v.$black-color};
-
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
-
-  #light-toggle-system {
-    display: inline-block;
-  }
-
-  #light-toggle-dark {
-    display: none;
-  }
-
-  #light-toggle-light {
-    display: none;
-  }
-
-  .only-light {
-    display: block;
-  }
-
-  .only-dark {
-    display: none;
-  }
-
-  #back-to-top {
-    color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
-    bottom: v.$back-to-top-bottom;
-    right: v.$back-to-top-right;
-    height: v.$back-to-top-height;
-    width: v.$back-to-top-width;
-    z-index: v.$back-to-top-z-index;
-  }
+  --grad-accent: linear-gradient(100deg, #a855f7 0%, #8b5cf6 40%, #22d3ee 100%);
 }
 
 html[data-theme="dark"] {
-  color-scheme: dark;
   --global-bg-color: #0b0b12;
   --global-code-bg-color: #15151f;
   --global-text-color: #e7e7f0;
-  --global-text-color-light: #{v.$grey-color};
   --global-theme-color: #a78bfa;
   --global-hover-color: #22d3ee;
-  --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-light};
-  --global-footer-text-color: #{v.$grey-color-dark};
-  --global-footer-link-color: #{v.$black-color};
-  --global-distill-app-color: #{v.$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #15151f;
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel(v.$white-color, "red", v.$space: rgb)},
-    #{color.channel(v.$white-color, "green", v.$space: rgb)},
-    #{color.channel(v.$white-color, "blue", v.$space: rgb)},
-    0.5
-  );
-  --global-back-to-top-text-color: #{v.$black-color};
-  --global-newsletter-bg-color: #{v.$grey-color-light};
-  --global-newsletter-text-color: #{v.$grey-color-dark};
-
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #215d42;
-  --global-tip-block-text: #beffe2;
-  --global-tip-block-title: #e2f5ec;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #6b5900;
-  --global-warning-block-text: #fff2af;
-  --global-warning-block-title: #fff8d8;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #600;
-  --global-danger-block-text: #ffb9b9;
-  --global-danger-block-title: #ffe0e0;
-
-  .only-light {
-    display: none;
-  }
-
-  .only-dark {
-    display: block;
-  }
-}
-
-html[data-theme-setting="dark"] {
-  #light-toggle-system {
-    display: none;
-  }
-
-  #light-toggle-dark {
-    display: inline-block;
-  }
-
-  #light-toggle-light {
-    display: none;
-  }
-
-  #back-to-top {
-    color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
-  }
-}
-
-html[data-theme-setting="light"] {
-  #light-toggle-system {
-    display: none;
-  }
-
-  #light-toggle-dark {
-    display: none;
-  }
-
-  #light-toggle-light {
-    display: inline-block;
-  }
-}
-
-.fa-half-sun-moon {
-  position: relative;
-  display: inline-block;
-
-  --fa-font: var(--fa-font-solid);
-  speak: none;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  width: 1em;
-  height: 1em;
-}
-
-.fa-half-sun-moon::before,
-.fa-half-sun-moon::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  top: -0.5px;
-  bottom: -0.5px;
-  text-align: center;
-  line-height: 1em;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  font: var(--fa-font);
-}
-
-/* Left half: MOON */
-.fa-half-sun-moon::before {
-  content: "\f111";
-  color: var(--global-text-color);
-  clip-path: polygon(0 0, calc(50% - 0.5px) 0, calc(50% - 0.5px) 100%, 0 100%);
-}
-
-/* Right half: SUN */
-.fa-half-sun-moon::after {
-  content: "\f185";
-  color: var(--global-text-color);
-  clip-path: polygon(calc(50% + 0.5px) 0, 100% 0, 100% 100%, calc(50% + 0.5px) 100%);
-  right: -1.5px; /* slight overflow to avoid right-edge clipping */
-  transform: translateX(-1px); /* visually re-center the sun half */
-}
-
-#light-toggle:hover .fa-half-sun-moon::before {
-  color: var(--global-theme-color);
-}
-
-#light-toggle:hover .fa-half-sun-moon::after {
-  color: var(--global-theme-color);
-}
-
-/*******************************************************************************
- * Personalización de Ángel — tipografía geométrica y acentos degradados
- * (violeta → cyan, inspirado en las diapositivas del taller de Deep Learning)
- ******************************************************************************/
-
-:root {
-  --grad-accent: linear-gradient(100deg, #a855f7 0%, #8b5cf6 40%, #22d3ee 100%);
 }
 
 /* Cuerpo con Inter y títulos con Space Grotesk */
@@ -239,7 +43,7 @@ h6,
   letter-spacing: -0.015em;
 }
 
-/* Título/nombre de la portada con degradado (solo en modo oscuro, donde luce) */
+/* Título/nombre de la portada con degradado en modo oscuro */
 html[data-theme="dark"] .post-title,
 html[data-theme="dark"] .post-title a,
 html[data-theme="dark"] h1.post-title {
@@ -251,7 +55,6 @@ html[data-theme="dark"] h1.post-title {
   width: fit-content;
 }
 
-/* Clase utilitaria: envuelve texto con <span class="grad">...</span> para el degradado */
 .grad {
   background: linear-gradient(100deg, #8b5cf6 0%, #06b6d4 100%) !important;
   -webkit-background-clip: text !important;
@@ -260,7 +63,7 @@ html[data-theme="dark"] h1.post-title {
   color: transparent !important;
 }
 
-/* Resplandor ambiental violeta→cyan de fondo en modo oscuro */
+/* Resplandor ambiental violeta->cyan de fondo en modo oscuro */
 html[data-theme="dark"] body {
   background-image:
     radial-gradient(1100px 560px at 85% -8%, rgba(139, 92, 246, 0.14), transparent 60%),
@@ -268,16 +71,14 @@ html[data-theme="dark"] body {
   background-attachment: fixed;
 }
 
-/* Enlaces un poco más marcados y con transición al cyan */
 a {
   transition: color 0.15s ease;
 }
 
 /*******************************************************************************
- * Selector de idioma (ES / EN) — muestra/oculta bloques por idioma
+ * Selector de idioma (ES / EN)
  ******************************************************************************/
 
-/* Por defecto se ve español; inglés oculto hasta pulsar el botón */
 .lang-en {
   display: none;
 }
@@ -287,23 +88,36 @@ html[data-lang="en"] .lang-es {
 html[data-lang="en"] .lang-en {
   display: block;
 }
+html[data-lang="en"] span.lang-en,
+html[data-lang="en"] a.lang-en,
+html[data-lang="en"] strong.lang-en,
+html[data-lang="en"] em.lang-en {
+  display: inline;
+}
 
-/* Botón de idioma, con el mismo estilo del toggle de tema */
 #lang-toggle {
   background: none;
-  border: none;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
   cursor: pointer;
   color: var(--global-text-color);
   font-family: "Space Grotesk", "Inter", sans-serif;
   font-weight: 600;
-  font-size: 0.8rem;
-  letter-spacing: 0.02em;
-  padding: 0 0.45rem;
-  line-height: 1;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.35rem;
+  line-height: 1.2;
   vertical-align: middle;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
-#lang-toggle:hover {
+
+#lang-toggle:hover,
+#lang-toggle:focus-visible {
   color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
 }
 
 /*******************************************************************************
@@ -328,11 +142,11 @@ html[data-lang="en"] .lang-en {
 .cv-entry:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  border-color: rgba(99, 102, 241, 0.4);
+  border-color: rgba(124, 58, 237, 0.4);
 }
 
 .cv-entry .cv-date {
-  flex: 0 0 135px;
+  flex: 0 0 140px;
   font-family: "Space Grotesk", "Inter", sans-serif;
   font-size: 0.82rem;
   font-weight: 600;
@@ -346,9 +160,10 @@ html[data-lang="en"] .lang-en {
   min-width: 0;
 }
 
-.cv-entry .cv-body h4 {
+.cv-entry .cv-body h4,
+.cv-entry .cv-body h3 {
   margin: 0 0 0.35rem;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   font-family: "Space Grotesk", "Inter", sans-serif;
   font-weight: 600;
   display: flex;
@@ -366,7 +181,7 @@ html[data-lang="en"] .lang-en {
 
 .cv-entry .cv-body p {
   margin: 0 0 0.45rem;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .cv-entry .cv-body ul {
@@ -374,48 +189,68 @@ html[data-lang="en"] .lang-en {
   padding-left: 1.2rem;
 }
 
+.cv-entry .cv-body li {
+  margin-bottom: 0.25rem;
+  line-height: 1.55;
+}
+
 /* Insignias, Badges y Pills */
 .badge-award {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 600;
-  padding: 0.2rem 0.55rem;
+  padding: 0.18rem 0.55rem;
   border-radius: 9999px;
   background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-  color: #92400e;
-  border: 1px solid #f59e0b;
+  color: #78350f;
+  border: 1px solid #d97706;
+}
+
+html[data-theme="dark"] .badge-award {
+  background: rgba(245, 158, 11, 0.16);
+  color: #fcd34d;
+  border-color: rgba(245, 158, 11, 0.45);
 }
 
 .badge-honor {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 600;
-  padding: 0.2rem 0.55rem;
+  padding: 0.18rem 0.55rem;
   border-radius: 9999px;
-  background: rgba(99, 102, 241, 0.12);
+  background: rgba(124, 58, 237, 0.12);
   color: var(--global-theme-color);
-  border: 1px solid rgba(99, 102, 241, 0.25);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+html[data-theme="dark"] .badge-honor {
+  background: rgba(167, 139, 250, 0.15);
+  border-color: rgba(167, 139, 250, 0.35);
 }
 
 .tech-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 0.38rem;
   margin-top: 0.5rem;
 }
 
 .tech-pill {
-  font-size: 0.75rem;
+  font-size: 0.76rem;
   font-weight: 500;
-  padding: 0.15rem 0.5rem;
+  padding: 0.18rem 0.55rem;
   border-radius: 6px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.04);
   border: 1px solid var(--global-divider-color);
   color: var(--global-text-color);
+}
+
+html[data-theme="dark"] .tech-pill {
+  background: rgba(255, 255, 255, 0.06);
 }
 
 /* Botones de acción y enlaces a repositorios */
@@ -453,7 +288,11 @@ html[data-lang="en"] .lang-en {
   padding: 0.85rem 1rem;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.02);
-  border: 1px dashed var(--global-divider-color);
+  border: 1px solid var(--global-divider-color);
+}
+
+html[data-theme="dark"] .event-gallery-box {
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .event-gallery-header {
@@ -473,8 +312,8 @@ html[data-lang="en"] .lang-en {
 }
 
 .gallery-count {
-  font-size: 0.75rem;
-  opacity: 0.75;
+  font-size: 0.78rem;
+  opacity: 0.8;
 }
 
 .event-gallery-grid {
@@ -528,38 +367,10 @@ html[data-lang="en"] .lang-en {
   opacity: 1;
 }
 
-.event-gallery-empty {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  padding: 0.4rem 0.2rem;
-  font-size: 0.82rem;
-}
-
-.event-gallery-empty .empty-icon {
-  font-size: 1.5rem;
-  color: var(--global-theme-color);
-  opacity: 0.7;
-}
-
-.event-gallery-empty .empty-text p {
-  margin: 0.2rem 0 0;
-  font-size: 0.78rem;
-  opacity: 0.8;
-}
-
-.event-gallery-empty code {
-  display: inline-block;
-  font-size: 0.75rem;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.06);
-}
-
 /* Tarjetas de Certificados */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 1rem;
   margin: 1.5rem 0;
 }
@@ -598,7 +409,7 @@ html[data-lang="en"] .lang-en {
 
 .cert-date {
   font-size: 0.8rem;
-  opacity: 0.8;
+  opacity: 0.82;
 }
 
 @media (max-width: 600px) {
@@ -616,8 +427,11 @@ html[data-lang="en"] .lang-en {
 .cv-pdf-actions {
   margin-bottom: 1rem;
 }
+
 .cv-download-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: 0.5rem 1rem;
   border: 1px solid var(--global-theme-color);
   border-radius: 8px;
@@ -626,10 +440,12 @@ html[data-lang="en"] .lang-en {
   font-weight: 600;
   text-decoration: none;
 }
+
 .cv-download-btn:hover {
   background: var(--global-theme-color);
   color: var(--global-bg-color);
 }
+
 .cv-pdf-frame {
   width: 100%;
   height: 85vh;
@@ -637,6 +453,7 @@ html[data-lang="en"] .lang-en {
   border-radius: 10px;
   overflow: hidden;
 }
+
 .cv-pdf-frame iframe {
   width: 100%;
   height: 100%;

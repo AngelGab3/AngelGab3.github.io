@@ -19,7 +19,7 @@ lang: es # idioma del sitio
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://angelgab3.github.io # dominio base de tu sitio
-baseurl: '' # vacío porque el repo se llamará angelgab3.github.io (sitio en la raíz)
+baseurl: "" # vacío porque el repo se llamará angelgab3.github.io (sitio en la raíz)
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -214,8 +214,19 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include: ["_pages", ".nojekyll"]
 exclude:
+  - .agents/
+  - .cache/
+  - .claude/
+  - .codex/
+  - .devcontainer/
+  - .gemini/
+  - .github/
+  - AGENTS.md
+  - CLAUDE.md
+  - GUIA.md
+  - PROMPT_AGENTES.md
   - al-folio-upgrade-report.md
   - bin/
   - CONTRIBUTING.md
@@ -235,6 +246,9 @@ exclude:
   - purgecss.config.js
   - README.md
   - readme_preview/
+  - requirements.txt
+  - scripts/
+  - test/
   - gems/
   - migrations/
   - vendor
