@@ -1,43 +1,47 @@
-{% comment %}
-  Event Gallery Component
-  Usage: {% include event_gallery.liquid folder="2024-10-congreso-smf-chihuahua" title="Galería SMF 2024" %}
-{% endcomment %}
-
-{% assign folder_target = '/assets/img/eventos/' | append: include.folder %}
-{% assign gallery_images = '' | split: '' %}
-
-{% for file in site.static_files %}
-  {% if file.path contains folder_target %}
-    {% assign ext = file.extname | downcase %}
-    {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' or ext == '.gif' %}
-      {% assign gallery_images = gallery_images | push: file %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
-{% assign sorted_images = gallery_images | sort: 'path' %}
-
-{% if sorted_images.size > 0 %}
+{% assign evento = site.data.eventos_by_folder[include.folder] %}
+{% if evento and evento.tiene_fotos %}
   <div class="event-gallery-box">
     {% if include.title %}
       <div class="event-gallery-header">
         <span class="gallery-badge"><i class="fa-solid fa-camera"></i> {{ include.title }}</span>
         <span class="gallery-count">
-          {{- sorted_images.size }} foto{% if sorted_images.size != 1 %}s{% endif -%}
+          <span class="lang-es">
+            {{- evento.cantidad_fotos }} foto{% if evento.cantidad_fotos != 1 %}s{% endif -%}
+          </span>
+          <span class="lang-en">
+            {{- evento.cantidad_fotos }} photo{% if evento.cantidad_fotos != 1 %}s{% endif -%}
+          </span>
         </span>
       </div>
     {% endif %}
 
-    <div class="event-gallery-grid">
-      {% for img in sorted_images %}
-        <div class="event-gallery-card">
-          <a href="{{ img.path | relative_url }}" class="event-gallery-link" target="_blank" rel="noopener noreferrer" title="Ver imagen completa">
-            <img src="{{ img.path | relative_url }}" alt="{{ include.title | default: img.name }}" loading="lazy" class="event-gallery-img">
-            <div class="event-gallery-overlay">
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-            </div>
-          </a>
-        </div>
+    <div class="justified-gallery pswp-gallery" data-event-folder="{{ include.folder }}">
+      {% for foto in evento.fotos %}
+        <a
+          href="{{ foto.rel_url }}"
+          class="justified-item"
+          style="--ar: {{ foto.aspect_ratio }}; --placeholder: {{ foto.dominant_color }};"
+          data-pswp-width="{{ foto.width }}"
+          data-pswp-height="{{ foto.height }}"
+          data-pswp-srcset="{{ foto.srcset }}"
+          data-caption-es="{{ foto.caption_es | escape }}"
+          data-caption-en="{{ foto.caption_en | escape }}"
+        >
+          <picture>
+            <source type="image/webp" srcset="{{ foto.srcset }}" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            <img
+              src="{{ foto.thumb_url }}"
+              alt="{{ foto.caption_es | escape }}"
+              width="{{ foto.width }}"
+              height="{{ foto.height }}"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
+          <span class="event-gallery-overlay" aria-hidden="true">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </span>
+        </a>
       {% endfor %}
     </div>
   </div>

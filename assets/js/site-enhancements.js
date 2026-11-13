@@ -152,9 +152,64 @@
     themeBtn.parentNode.insertBefore(btn, themeBtn);
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", insertLanguageButton);
-  } else {
+  async function initPhotoSwipeGalleries() {
+    var galleries = document.querySelectorAll(".pswp-gallery");
+    if (!galleries.length) return;
+    try {
+      var mod = await import("https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js");
+      var PhotoSwipeLightbox = mod.default;
+      var lightbox = new PhotoSwipeLightbox({
+        gallery: ".pswp-gallery",
+        children: "a.justified-item",
+        pswpModule: function () {
+          return import("https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js");
+        },
+        bgOpacity: 0.92,
+        padding: { top: 24, bottom: 56, left: 16, right: 16 },
+      });
+      lightbox.on("uiRegister", function () {
+        lightbox.pswp.ui.registerElement({
+          name: "custom-caption",
+          order: 9,
+          isButton: false,
+          appendTo: "root",
+          html: "",
+          onInit: function (el, pswp) {
+            el.className = "pswp-custom-caption";
+            pswp.on("change", function () {
+              var curr = pswp.currSlide;
+              var trigger = curr && curr.data && curr.data.element;
+              var activeLang = document.documentElement.getAttribute("data-lang") || "es";
+              var caption = "";
+              if (trigger) {
+                caption =
+                  (activeLang === "en" ? trigger.getAttribute("data-caption-en") : trigger.getAttribute("data-caption-es")) ||
+                  trigger.getAttribute("data-caption-es") ||
+                  "";
+              }
+              el.textContent = "";
+              if (caption) {
+                var inner = document.createElement("div");
+                inner.className = "pswp-custom-caption-inner";
+                inner.textContent = caption;
+                el.appendChild(inner);
+              }
+            });
+          },
+        });
+      });
+      lightbox.init();
+    } catch (e) {}
+  }
+
+  function onReady() {
     insertLanguageButton();
+    initPhotoSwipeGalleries();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", onReady);
+  } else {
+    onReady();
   }
 })();

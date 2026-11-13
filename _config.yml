@@ -425,7 +425,7 @@ imagemagick:
     - ".tiff"
     - ".gif"
   output_formats:
-    webp: "-auto-orient -quality 85"
+    webp: "-auto-orient -strip -quality 82"
 
 # Lazy loading images
 #   If you enable lazy loading, all images will add the loading="lazy" attribute.
