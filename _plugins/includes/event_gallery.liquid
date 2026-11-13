@@ -1,0 +1,48 @@
+{% assign evento = site.data.eventos_by_folder[include.folder] %}
+{% if evento and evento.tiene_fotos %}
+  <div class="event-gallery-box">
+    {% if include.title %}
+      <div class="event-gallery-header">
+        <span class="gallery-badge"><i class="fa-solid fa-camera"></i> {{ include.title }}</span>
+        <span class="gallery-count">
+          <span class="lang-es">
+            {{- evento.cantidad_fotos }} foto{% if evento.cantidad_fotos != 1 %}s{% endif -%}
+          </span>
+          <span class="lang-en">
+            {{- evento.cantidad_fotos }} photo{% if evento.cantidad_fotos != 1 %}s{% endif -%}
+          </span>
+        </span>
+      </div>
+    {% endif %}
+
+    <div class="justified-gallery pswp-gallery" data-event-folder="{{ include.folder }}">
+      {% for foto in evento.fotos %}
+        <a
+          href="{{ foto.rel_url }}"
+          class="justified-item"
+          style="--ar: {{ foto.aspect_ratio }}; --placeholder: {{ foto.dominant_color }};"
+          data-pswp-width="{{ foto.width }}"
+          data-pswp-height="{{ foto.height }}"
+          data-pswp-srcset="{{ foto.srcset }}"
+          data-caption-es="{{ foto.caption_es | escape }}"
+          data-caption-en="{{ foto.caption_en | escape }}"
+        >
+          <picture>
+            <source type="image/webp" srcset="{{ foto.srcset }}" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            <img
+              src="{{ foto.thumb_url }}"
+              alt="{{ foto.caption_es | escape }}"
+              width="{{ foto.width }}"
+              height="{{ foto.height }}"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
+          <span class="event-gallery-overlay" aria-hidden="true">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

@@ -6,6 +6,9 @@ on:
       - master
       - main
     paths:
+      - ".nojekyll"
+      - "_data/**"
+      - "_plugins/**"
       - "assets/**"
       - "**.bib"
       - "**.html"
@@ -13,8 +16,11 @@ on:
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "requirements.txt"
+      - "scripts/**"
       - "Gemfile"
       - "Gemfile.lock"
+      - "purgecss.config.js"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -33,6 +39,9 @@ on:
       - master
       - main
     paths:
+      - ".nojekyll"
+      - "_data/**"
+      - "_plugins/**"
       - "assets/**"
       - "**.bib"
       - "**.html"
@@ -40,8 +49,11 @@ on:
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "requirements.txt"
+      - "scripts/**"
       - "Gemfile"
       - "Gemfile.lock"
+      - "purgecss.config.js"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -70,13 +82,20 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: "3.3"
           bundler-cache: true
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
+      - name: Cache event photo variants 📸
+        uses: actions/cache@v4
+        with:
+          path: .cache/eventos
+          key: ${{ runner.os }}-eventos-${{ hashFiles('assets/img/eventos/**', 'scripts/process_event_photos.py') }}
+          restore-keys: |
+            ${{ runner.os }}-eventos-
       - name: Setup Node 🧰
         uses: actions/setup-node@v4
         with:
@@ -93,10 +112,12 @@ jobs:
           value: ${{ github.repository }}
       - name: Install and Build 🔧
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
+          sudo apt-get update && sudo apt-get install -y imagemagick libheif-examples
+          pip3 install -r requirements.txt
+          python3 scripts/process_event_photos.py
           export JEKYLL_ENV=production
           bundle exec jekyll build
+          touch _site/.nojekyll
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
@@ -106,3 +127,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+          clean: true

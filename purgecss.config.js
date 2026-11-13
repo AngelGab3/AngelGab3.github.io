@@ -1,6 +1,6 @@
 module.exports = {
   content: ["_site/**/*.html", "_site/**/*.js"],
-  css: ["_site/assets/css/*.css"],
+  css: ["_site/assets/css/main.css", "_site/assets/css/tailwind.css"],
   output: "_site/assets/css/",
   skippedContentGlobs: ["_site/assets/**/*.html"],
   safelist: [
@@ -23,5 +23,26 @@ module.exports = {
     // and page chrome (scroll-progress bar, ToC) bleeds through a zoomed image.
     "medium-zoom-overlay",
     "medium-zoom-image--opened",
+    // Custom bilingual & gallery classes
+    "lang-es",
+    "lang-en",
+    "lang-toggle",
+    "pswp-custom-caption",
+    "pswp-custom-caption-inner",
+    "stretched-link",
+    "cv-header-bar",
+    "cv-subtitle",
+    "event-empty-state",
+    "event-cover-media",
+    "event-cover-body",
+    "event-photo-badge",
+    "event-cover-meta",
+    "event-cover-desc",
+    "event-section",
+    "event-section-header",
+    "justified-gallery",
+    "justified-item",
+    "event-cards-grid",
+    "event-cover-card",
   ],
 };

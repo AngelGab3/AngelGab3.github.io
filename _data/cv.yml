@@ -2,12 +2,11 @@ cv:
   name: Ángel Gabriel Munguía Velázquez
   label: Physics Undergraduate · Computational Physics & Artificial Intelligence
   email: angel.munguiavz@udlap.mx
-  phone: (+52) 222 712 1666
   location: Puebla, Mexico
   image: "assets/img/prof_pic.jpg"
   summary: >
-    Physics undergraduate at Universidad de las Américas Puebla (UDLAP), driven by curiosity about how computation and
-    mathematics can help us understand the natural world. Interested in computational physics, machine learning, and quantum computing,
+    Physics undergraduate at Universidad de las Américas Puebla (UDLAP), driven by curiosity about how computation can
+    help us understand the natural world. Interested in computational physics, machine learning, and quantum computing,
     with hands-on experience implementing deep learning models, designing experimental setups, and coordinating hardware–software integration.
     Seeking research opportunities to develop computational methods and models that help explain complex systems, interpret scientific data,
     and deepen our understanding of the underlying physical processes.
@@ -18,7 +17,7 @@ cv:
       url: https://github.com/AngelGab3
     - network: LinkedIn
       username: Gabriel Velazquez
-      url: https://www.linkedin.com/in/ánel-gabriel-munguía-velázquez-53806930a
+      url: https://www.linkedin.com/in/%C3%A1ngel-gabriel-mungu%C3%ADa-vel%C3%A1zquez-53806930a
     - network: Email
       username: angel.munguiavz@udlap.mx
       url: mailto:angel.munguiavz@udlap.mx
