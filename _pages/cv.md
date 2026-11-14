@@ -9,10 +9,12 @@ nav_order: 8
 
 <div class="lang lang-es">
   <div class="cv-header-bar">
-    <h3>Ángel Gabriel Munguía Velázquez</h3>
-    <p class="cv-subtitle">
-      <strong>Licenciatura en Física (Programa de Honores)</strong> · UDLAP · Beca de Excelencia STEM (100%) · Promedio: 9.5/10
-    </p>
+    <div class="cv-header-info">
+      <h3>Ángel Gabriel Munguía Velázquez</h3>
+      <p class="cv-subtitle">
+        <strong>Licenciatura en Física (Programa de Honores)</strong> · UDLAP · Beca de Excelencia STEM (100%) · Promedio: 9.5/10
+      </p>
+    </div>
     <div class="cv-pdf-actions">
       <a class="cv-download-btn" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener">
         <i class="fa-solid fa-file-pdf"></i> Abrir / Descargar CV (PDF)
@@ -32,10 +34,12 @@ nav_order: 8
 
 <div class="lang lang-en">
   <div class="cv-header-bar">
-    <h3>Ángel Gabriel Munguía Velázquez</h3>
-    <p class="cv-subtitle">
-      <strong>B.S. in Physics (Honors Program)</strong> · UDLAP · Full STEM Excellence Scholarship (100%) · GPA: 9.5/10
-    </p>
+    <div class="cv-header-info">
+      <h3>Ángel Gabriel Munguía Velázquez</h3>
+      <p class="cv-subtitle">
+        <strong>B.S. in Physics (Honors Program)</strong> · UDLAP · Full STEM Excellence Scholarship (100%) · GPA: 9.5/10
+      </p>
+    </div>
     <div class="cv-pdf-actions">
       <a class="cv-download-btn" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener">
         <i class="fa-solid fa-file-pdf"></i> Open / Download CV (PDF)

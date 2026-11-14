@@ -36,9 +36,32 @@ Soy estudiante de la **Licenciatura en Física** dentro del **Programa de Honore
 
 Combino la formación teórica y matemática de la física con experiencia práctica en **aprendizaje profundo (_deep learning_)**, **astrofísica computacional**, **computación cuántica**, diseño de configuraciones experimentales e integración **hardware–software**. Busco activamente oportunidades y estancias de investigación para desarrollar métodos y modelos computacionales que ayuden a interpretar datos científicos y profundizar nuestra comprensión de los procesos físicos subyacentes.
 
+<div class="hero-highlights">
+  <div class="hero-stat">
+    <div class="hero-stat-value">GPA 9.5 / 10</div>
+    <p class="hero-stat-label">Programa de Honores UDLAP (Top 15%)</p>
+  </div>
+  <div class="hero-stat">
+    <div class="hero-stat-value">Beca 100%</div>
+    <p class="hero-stat-label">Excelencia Académica STEM · UDLAP</p>
+  </div>
+  <div class="hero-stat">
+    <div class="hero-stat-value">Oro Internacional</div>
+    <p class="hero-stat-label">Final Iberoamericana Infomatrix 2026</p>
+  </div>
+  <div class="hero-stat">
+    <div class="hero-stat-value">34 IB · TOEFL 587</div>
+    <p class="hero-stat-label">Bachillerato Internacional · Bilingüe</p>
+  </div>
+</div>
+
+<div class="section-clear"></div>
+
 ---
 
 ### Educación
+
+<div class="cv-grid-2">
 
 <div class="cv-entry">
   <div class="cv-date">Ago 2024 – Mayo 2028 (esp.)</div>
@@ -63,9 +86,13 @@ Combino la formación teórica y matemática de la física con experiencia prác
   </div>
 </div>
 
+</div>
+
 ---
 
 ### Experiencia de Investigación y Técnica
+
+<div class="cv-grid-3">
 
 <div class="cv-entry">
   <div class="cv-date">Ago 2025 – Presente</div>
@@ -102,9 +129,13 @@ Combino la formación teórica y matemática de la física con experiencia prác
   </div>
 </div>
 
+</div>
+
 ---
 
 ### Becas y Premios Destacados
+
+<div class="cv-grid-2">
 
 <div class="cv-entry">
   <div class="cv-date">2024 – 2028</div>
@@ -123,6 +154,10 @@ Combino la formación teórica y matemática de la física con experiencia prác
     <p>Máximo reconocimiento en la categoría de inteligencia artificial por el <em>Asistente Visual para Personas con Discapacidad Visual</em> (LLMs multimodales, YOLO y transmisión de video sobre Wi-Fi con Arduino UNO Q).</p>
   </div>
 </div>
+
+</div>
+
+<div class="cv-grid-3">
 
 <div class="cv-entry">
   <div class="cv-date">Mayo 2025</div>
@@ -151,9 +186,13 @@ Combino la formación teórica y matemática de la física con experiencia prác
   </div>
 </div>
 
+</div>
+
 ---
 
 ### Habilidades Técnicas e Idiomas
+
+<div class="cv-grid-3">
 
 <div class="cv-entry">
   <div class="cv-date">Física Cuántica y Computacional</div>
@@ -193,6 +232,10 @@ Combino la formación teórica y matemática de la física con experiencia prác
   </div>
 </div>
 
+</div>
+
+<div class="cv-grid-2">
+
 <div class="cv-entry">
   <div class="cv-date">Herramientas</div>
   <div class="cv-body">
@@ -214,6 +257,8 @@ Combino la formación teórica y matemática de la física con experiencia prác
   </div>
 </div>
 
+</div>
+
 Explora mis <a href="/proyectos/">proyectos</a>, <a href="/investigaciones/">investigaciones</a>, <a href="/lectures/">lectures</a>, <a href="/platicas-talleres/">pláticas y talleres</a>, <a href="/certificados/">certificados</a>, <a href="/galeria/">galería de eventos</a> y <a href="/cv/">currículum (CV)</a>.
 
 </div>
@@ -224,9 +269,32 @@ I am a **B.S. in Physics** undergraduate in the **Honors Program** at [Universid
 
 My work combines computational physics with hands-on experience in **deep learning**, **computational astrophysics**, **quantum computing**, experimental setup design, and **hardware–software integration**. I am actively seeking research opportunities to develop computational methods and models that help explain complex systems, interpret scientific data, and deepen our understanding of underlying physical processes.
 
+<div class="hero-highlights">
+  <div class="hero-stat">
+    <div class="hero-stat-value">GPA 9.5 / 10</div>
+    <p class="hero-stat-label">UDLAP Honors Program (Top 15%)</p>
+  </div>
+  <div class="hero-stat">
+    <div class="hero-stat-value">100% Tuition</div>
+    <p class="hero-stat-label">STEM Excellence Scholarship · UDLAP</p>
+  </div>
+  <div class="hero-stat">
+    <div class="hero-stat-value">International Gold</div>
+    <p class="hero-stat-label">Infomatrix Ibero-American Final 2026</p>
+  </div>
+  <div class="hero-stat">
+    <div class="hero-stat-value">34 IB · TOEFL 587</div>
+    <p class="hero-stat-label">IB Diploma · Bilingual ES / EN</p>
+  </div>
+</div>
+
+<div class="section-clear"></div>
+
 ---
 
 ### Education
+
+<div class="cv-grid-2">
 
 <div class="cv-entry">
   <div class="cv-date">Aug 2024 – Expected May 2028</div>
@@ -251,9 +319,13 @@ My work combines computational physics with hands-on experience in **deep learni
   </div>
 </div>
 
+</div>
+
 ---
 
 ### Research & Technical Experience
+
+<div class="cv-grid-3">
 
 <div class="cv-entry">
   <div class="cv-date">Aug 2025 – Present</div>
@@ -290,9 +362,13 @@ My work combines computational physics with hands-on experience in **deep learni
   </div>
 </div>
 
+</div>
+
 ---
 
 ### Scholarships & Awards
+
+<div class="cv-grid-2">
 
 <div class="cv-entry">
   <div class="cv-date">2024 – 2028</div>
@@ -311,6 +387,10 @@ My work combines computational physics with hands-on experience in **deep learni
     <p>Top honor in the AI development category for the <em>Visual Assistant for the Visually Impaired</em> (multimodal LLMs, YOLO object detection, and low-latency Wi-Fi video streaming using an Arduino UNO Q).</p>
   </div>
 </div>
+
+</div>
+
+<div class="cv-grid-3">
 
 <div class="cv-entry">
   <div class="cv-date">May 2025</div>
@@ -339,9 +419,13 @@ My work combines computational physics with hands-on experience in **deep learni
   </div>
 </div>
 
+</div>
+
 ---
 
 ### Technical Skills & Languages
+
+<div class="cv-grid-3">
 
 <div class="cv-entry">
   <div class="cv-date">Quantum &amp; Computational Physics</div>
@@ -381,6 +465,10 @@ My work combines computational physics with hands-on experience in **deep learni
   </div>
 </div>
 
+</div>
+
+<div class="cv-grid-2">
+
 <div class="cv-entry">
   <div class="cv-date">Tools</div>
   <div class="cv-body">
@@ -400,6 +488,8 @@ My work combines computational physics with hands-on experience in **deep learni
   <div class="cv-body">
     <p style="margin: 0;"><strong>Spanish</strong> (Native) · <strong>English</strong> (Fluent — TOEFL ITP: 587)</p>
   </div>
+</div>
+
 </div>
 
 Explore my <a href="/proyectos/">projects</a>, <a href="/investigaciones/">research</a>, <a href="/lectures/">lectures</a>, <a href="/platicas-talleres/">talks &amp; workshops</a>, <a href="/certificados/">certifications</a>, <a href="/galeria/">event gallery</a>, and <a href="/cv/">curriculum vitae (CV)</a>.

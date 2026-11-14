@@ -11,6 +11,8 @@ nav_order: 4
 
 <h2><i class="fa-solid fa-microphone-lines"></i> Pláticas y Conferencias</h2>
 
+<div class="cv-grid-2">
+
 <div class="cv-entry">
   <div class="cv-date">Mayo 2026</div>
   <div class="cv-body">
@@ -31,7 +33,11 @@ nav_order: 4
   </div>
 </div>
 
+</div>
+
 <h2 style="margin-top: 2rem;"><i class="fa-solid fa-chalkboard-user"></i> Talleres y Divulgación Científica</h2>
+
+<div class="cv-grid-3">
 
 <div class="cv-entry">
   <div class="cv-date">Verano 2026</div>
@@ -69,9 +75,13 @@ nav_order: 4
 
 </div>
 
+</div>
+
 <div class="lang lang-en">
 
 <h2><i class="fa-solid fa-microphone-lines"></i> Talks &amp; Presentations</h2>
+
+<div class="cv-grid-2">
 
 <div class="cv-entry">
   <div class="cv-date">May 2026</div>
@@ -93,7 +103,11 @@ nav_order: 4
   </div>
 </div>
 
+</div>
+
 <h2 style="margin-top: 2rem;"><i class="fa-solid fa-chalkboard-user"></i> Workshops &amp; Science Outreach</h2>
+
+<div class="cv-grid-3">
 
 <div class="cv-entry">
   <div class="cv-date">Summer 2026</div>
@@ -127,6 +141,8 @@ nav_order: 4
     <p>Facilitated annual public science workshops for audiences of all ages, covering topics ranging from electromagnetism (2023) to machine learning in astrophysics (2025).</p>
     {% include event_gallery.liquid folder="2023-2025-noche-de-las-estrellas" title="Photo Gallery — Night of the Stars" %}
   </div>
+</div>
+
 </div>
 
 </div>

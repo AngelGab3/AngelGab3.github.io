@@ -9,6 +9,8 @@ nav_order: 2
 
 <div class="lang lang-es">
 
+<div class="cv-grid-2">
+
 <div class="cv-entry">
   <div class="cv-date">Ago 2025 – Presente</div>
   <div class="cv-body">
@@ -58,7 +60,11 @@ nav_order: 2
 
 </div>
 
+</div>
+
 <div class="lang lang-en">
+
+<div class="cv-grid-2">
 
 <div class="cv-entry">
   <div class="cv-date">Aug 2025 – Present</div>
@@ -105,6 +111,8 @@ nav_order: 2
     {% include event_gallery.liquid folder="2024-10-congreso-smf-chihuahua" title="Photos from the 67th National Physics Congress" %}
 
   </div>
+</div>
+
 </div>
 
 </div>
