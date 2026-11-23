@@ -173,8 +173,8 @@
         en: "Differential Geometry, Topology & Symplectic Physics",
       },
       desc: {
-        es: "Desarrollo formal en LaTeX de geometría visual, tensor métrico g_ij, cálculo exterior de Cartan, cohomología/topología física y mecánica simpléctica en T*Q.",
-        en: "Formal LaTeX notes bridging vector calculus with differential forms, Cartan moving frames, Riemannian metric tensors g_ij, physical topology, and symplectic mechanics on T*Q.",
+        es: "Desarrollo formal en LaTeX de geometría visual, tensor métrico riemanniano, cálculo exterior de Cartan, cohomología física y mecánica simpléctica.",
+        en: "Formal LaTeX notes bridging vector calculus with differential forms, Cartan moving frames, Riemannian metric tensors, physical topology, and symplectic mechanics.",
       },
     },
   };
@@ -352,76 +352,6 @@
     var bentoCards = document.querySelectorAll(".bento-card");
     bentoCards.forEach(function (card) {
       attachTilt(card, 2.2);
-    });
-  }
-
-  /* =========================================================================
-   * KINETIC TEXT-SCRAMBLE DECODER
-   * ========================================================================= */
-  function initKineticRoles() {
-    var nodes = document.querySelectorAll(".kinetic-role-text[data-roles]");
-    if (!nodes.length) return;
-
-    var GLYPHS = "ψφλ∂∇∑∫⊗ΩΔ01";
-
-    nodes.forEach(function (el) {
-      var raw = el.getAttribute("data-roles") || "";
-      var roles = raw
-        .split("|")
-        .map(function (s) {
-          return s.trim();
-        })
-        .filter(Boolean);
-      if (roles.length < 2) return;
-
-      var idx = 0;
-      var animFrame = 0;
-
-      function scrambleTo(target) {
-        if (prefersReducedMotion()) {
-          el.textContent = target;
-          return;
-        }
-        if (animFrame) window.cancelAnimationFrame(animFrame);
-        var duration = 640;
-        var start = performance.now();
-
-        function step(now) {
-          var progress = Math.min(1, (now - start) / duration);
-          var revealed = Math.floor(progress * target.length);
-          var out = "";
-          for (var i = 0; i < target.length; i++) {
-            var ch = target[i];
-            if (i < revealed || ch === " " || ch === "&") {
-              out += ch;
-            } else {
-              out += GLYPHS[Math.floor((i * 7 + now * 0.05) % GLYPHS.length)];
-            }
-          }
-          el.textContent = out;
-          if (progress < 1) {
-            animFrame = window.requestAnimationFrame(step);
-          } else {
-            el.textContent = target;
-            animFrame = 0;
-          }
-        }
-        animFrame = window.requestAnimationFrame(step);
-      }
-
-      if (!prefersReducedMotion()) {
-        window.setInterval(function () {
-          if (document.hidden || el.offsetParent === null) return;
-          idx = (idx + 1) % roles.length;
-          scrambleTo(roles[idx]);
-        }, 3400);
-      }
-
-      onLanguageChangedCallbacks.push(function () {
-        if (el.offsetParent !== null) {
-          scrambleTo(roles[idx]);
-        }
-      });
     });
   }
 
@@ -695,7 +625,6 @@
     initNavbarAndMagnetics();
     initSpotlight();
     initProfileAndCardTilt();
-    initKineticRoles();
     initCounters();
     initScrollReveals();
     initBentoFilters();

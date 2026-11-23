@@ -13,7 +13,7 @@ category_en: Computational Physics
 github: https://github.com/AngelGab3/Quantum-Computing
 sim: bloch
 bento_span: 7
-formula: "|ψ⟩ = cos(θ/2)|0⟩ + e^{iφ}sin(θ/2)|1⟩"
+formula: '$|\psi\rangle = \cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$'
 tags:
   - Qiskit
   - Hilbert Spaces

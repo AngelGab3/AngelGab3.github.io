@@ -128,7 +128,7 @@
       '<span class="lang-en">Symplectic Flow</span>' +
       "</button>" +
       "</div>" +
-      '<div class="quantum-hud-telemetry" aria-live="off">ds² = g_ij dθⁱ dθʲ · κ = +0.42</div>';
+      '<div class="quantum-hud-telemetry" aria-live="off"><i>ds</i><sup>2</sup> = <i>g</i><sub>ij</sub> <i>dθ</i><sup>i</sup> <i>dθ</i><sup>j</sup> · κ = +0.42</div>';
 
     postHeader.appendChild(hud);
 
@@ -262,7 +262,16 @@
       var kappa = (0.42 * Math.cos(t * 1.15) + (state.smoothX - 0.5) * 0.3).toFixed(2);
       var t1 = ((state.smoothX - 0.5) * 2.0).toFixed(2);
       var t2 = ((state.smoothY - 0.5) * 2.0).toFixed(2);
-      return "ds² = g_ij dθⁱ dθʲ · κ = " + (Number(kappa) >= 0 ? "+" : "") + kappa + " | θ=(" + t1 + ", " + t2 + ")";
+      return (
+        "<i>ds</i><sup>2</sup> = <i>g</i><sub>ij</sub> <i>dθ</i><sup>i</sup> <i>dθ</i><sup>j</sup> · κ = " +
+        (Number(kappa) >= 0 ? "+" : "") +
+        kappa +
+        " | θ = (" +
+        t1 +
+        ", " +
+        t2 +
+        ")"
+      );
     }
 
     function drawBlochHero(w, h, t, p) {
@@ -374,7 +383,7 @@
       var c1 = Math.sin(theta / 2).toFixed(2);
       var phiMod = (((phi % (Math.PI * 2)) + Math.PI * 2) % (Math.PI * 2)).toFixed(2);
       var zExp = Math.cos(theta).toFixed(2);
-      return "|ψ⟩ = " + c0 + "|0⟩ + " + c1 + "e^{i" + phiMod + "}|1⟩ · ⟨Z⟩ = " + (Number(zExp) >= 0 ? "+" : "") + zExp;
+      return "|ψ⟩ = " + c0 + "|0⟩ + " + c1 + " <i>e</i><sup><i>i</i>·" + phiMod + "</sup>|1⟩ · ⟨<i>Z</i>⟩ = " + (Number(zExp) >= 0 ? "+" : "") + zExp;
     }
 
     function stepSymplectic(pt, dt, t) {
@@ -463,7 +472,7 @@
       }
 
       var H = (1.42 + 0.35 * Math.sin(t * 0.6) + (state.smoothX - 0.5) * 0.2).toFixed(3);
-      return "ω = dp ∧ dq · RK4 dt=0.022 | H(q,p) = " + H;
+      return "ω = <i>dp</i> ∧ <i>dq</i> · RK4 Δ<i>t</i> = 0.022 | <i>H</i>(<i>q</i>,<i>p</i>) = " + H;
     }
 
     function draw(now) {
@@ -476,18 +485,18 @@
       ctx.clearRect(0, 0, size.width, size.height);
       var p = getPalette();
       var t = now * 0.001;
-      var telemetryText = "";
+      var telemetryHtml = "";
 
       if (state.mode === "bloch") {
-        telemetryText = drawBlochHero(size.width, size.height, t, p);
+        telemetryHtml = drawBlochHero(size.width, size.height, t, p);
       } else if (state.mode === "symplectic") {
-        telemetryText = drawSymplecticHero(size.width, size.height, t, p);
+        telemetryHtml = drawSymplecticHero(size.width, size.height, t, p);
       } else {
-        telemetryText = drawManifoldHero(size.width, size.height, t, p);
+        telemetryHtml = drawManifoldHero(size.width, size.height, t, p);
       }
 
       if (telemetryEl && now - state.lastTelemetryAt > 110) {
-        telemetryEl.textContent = telemetryText;
+        telemetryEl.innerHTML = telemetryHtml;
         state.lastTelemetryAt = now;
       }
     }

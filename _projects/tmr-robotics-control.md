@@ -13,7 +13,7 @@ category_en: Robotics & Hardware
 github: https://github.com/AngelGab3/sillodromo-chair-control
 sim: pcb-signal
 bento_span: 5
-formula: "u(t) = K_p e + K_i∫e + K_d ė"
+formula: '$u(t) = K_p e + K_i \!\int\! e\,dt + K_d \dot{e}$'
 tags:
   - ESP32
   - Custom PCB

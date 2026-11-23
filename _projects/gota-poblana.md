@@ -13,7 +13,7 @@ category_en: Robotics & Hardware
 github: https://github.com/RoshTzsche/gota_poblana
 sim: hocl-control
 bento_span: 7
-formula: "α_HOCl = 1 / (1 + 10^(pH − pKa(T)))"
+formula: '$\alpha_{\mathrm{HOCl}} = \left(1 + 10^{\mathrm{pH}-\mathrm{p}K_a(T)}\right)^{-1}$'
 badge_es: "2.º Lugar Hackatón Puebla 2026"
 badge_en: "2nd Place Hackatón Puebla 2026"
 tags:

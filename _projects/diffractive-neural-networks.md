@@ -13,7 +13,7 @@ category_en: Computational Physics
 github: https://github.com/AngelGab3/Final_Project_Optics_Difractive_Neural_Networks
 sim: diffraction
 bento_span: 5
-formula: "U(z) = ℱ⁻¹{ H_BL(u,v;z) · ℱ{U₀·e^{iΦ}} }"
+formula: '$U(z) = \mathcal{F}^{-1}\{H_{\mathrm{BL}}\,\mathcal{F}\{U_0 e^{i\Phi}\}\}$'
 tags:
   - Fourier Optics
   - PyTorch

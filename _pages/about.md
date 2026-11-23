@@ -32,13 +32,6 @@ latest_posts:
 
 <div class="lang lang-es" markdown="1">
 
-<div class="kinetic-role-bar">
-  <span class="kinetic-dot" aria-hidden="true"></span>
-  <span class="kinetic-prefix">LAB://COMPUTATIONAL_PHYSICS</span>
-  <span class="kinetic-sep" aria-hidden="true">·</span>
-  <span class="kinetic-role-text" data-roles="Física Computacional|Computación Cuántica|Geometría de la Información|Simulaciones Numéricas|Deep Learning &amp; Astrofísica">Física Computacional</span>
-</div>
-
 Soy estudiante de la **Licenciatura en Física** dentro del **Programa de Honores** en la [Universidad de las Américas Puebla (UDLAP)](https://www.udlap.mx/), con **Beca de Excelencia Académica STEM (100% de colegiatura)** y promedio general de **9.5/10**. Me motiva comprender cómo el cómputo, la geometría y las matemáticas ayudan a explicar los fenómenos del mundo natural.
 
 Combino la formación teórica y matemática de la física con experiencia práctica en **computación cuántica**, **geometría diferencial y de la información**, **simulaciones numéricas**, **aprendizaje profundo (_deep learning_)**, **astrofísica computacional** e integración **hardware–software**. Busco activamente oportunidades y estancias de investigación para desarrollar métodos y modelos computacionales que ayuden a interpretar datos científicos y profundizar nuestra comprensión de los procesos físicos subyacentes.
@@ -283,13 +276,6 @@ Explora mis <a href="/proyectos/">proyectos</a>, <a href="/investigaciones/">inv
 </div>
 
 <div class="lang lang-en" markdown="1">
-
-<div class="kinetic-role-bar">
-  <span class="kinetic-dot" aria-hidden="true"></span>
-  <span class="kinetic-prefix">LAB://COMPUTATIONAL_PHYSICS</span>
-  <span class="kinetic-sep" aria-hidden="true">·</span>
-  <span class="kinetic-role-text" data-roles="Computational Physics|Quantum Computing|Information Geometry|Numerical Simulations|Deep Learning &amp; Astrophysics">Computational Physics</span>
-</div>
 
 I am a **B.S. in Physics** undergraduate in the **Honors Program** at [Universidad de las Américas Puebla (UDLAP)](https://www.udlap.mx/), supported by a **Full Academic Excellence STEM Scholarship (100% Tuition)** with a **9.5/10** GPA. I am driven by curiosity about how computation, geometry, and mathematics can help us understand the natural world.
 

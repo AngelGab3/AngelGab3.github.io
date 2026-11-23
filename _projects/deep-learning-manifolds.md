@@ -13,7 +13,7 @@ category_en: Artificial Intelligence
 github: https://github.com/AngelGab3/Deep-Learning-Projects
 sim: latent-flow
 bento_span: 12
-formula: "∇_g L(θ) = G⁻¹(θ) ∇L(θ)"
+formula: '$\nabla_g \mathcal{L}(\theta) = G^{-1}(\theta)\nabla \mathcal{L}(\theta)$'
 tags:
   - Information Geometry
   - Manifolds

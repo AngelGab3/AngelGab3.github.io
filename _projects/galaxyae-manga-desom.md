@@ -13,7 +13,7 @@ category_en: Computational Physics
 github: https://github.com/AngelGab3/GalaxyAE
 sim: som-galaxy
 bento_span: 5
-formula: "z = f_θ(x) · DESOM Topology"
+formula: '$z = f_\theta(x) \;\cdot\; \mathrm{DESOM}$'
 tags:
   - Autoencoders
   - DESOM

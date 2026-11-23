@@ -61,6 +61,9 @@ async function openPage(browser, baseUrl, route, opts) {
 
   const page = await context.newPage();
   await page.goto(`${baseUrl}${route}`, { waitUntil: "networkidle" }).catch(() => {});
+  if (route.includes("proyectos")) {
+    await page.waitForFunction(() => document.querySelectorAll("mjx-container").length > 0, { timeout: 6000 }).catch(() => {});
+  }
   await page.waitForTimeout(950);
   return { context, page };
 }

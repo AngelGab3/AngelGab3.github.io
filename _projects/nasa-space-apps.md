@@ -13,7 +13,7 @@ category_en: Artificial Intelligence
 github: https://github.com/AngelGab3/Nasa-Space-App-Challenge-2025---STEM-UDLAP
 sim: orbital-forecast
 bento_span: 5
-formula: "ŷ(t+Δt) = LSTM ⊕ XGBoost"
+formula: '$\hat{y}(t+\Delta t) = \mathrm{LSTM} \oplus \mathrm{XGBoost}$'
 tags:
   - LSTM
   - XGBoost
