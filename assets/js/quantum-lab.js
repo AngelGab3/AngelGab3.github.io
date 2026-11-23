@@ -930,7 +930,7 @@
 
       ctx.font = '600 9.5px "JetBrains Mono", monospace';
       ctx.fillStyle = p.text;
-      ctx.fillText("pH " + curPh.toFixed(2) + " → " + Math.round(curAlpha * 100) + "% HOCl", w * 0.1, h * 0.22);
+      ctx.fillText("pH " + curPh.toFixed(2) + " → " + Math.round(curAlpha * 100) + "% HOCl", w * 0.48, h * 0.24);
     },
 
     "pcb-signal": function (ctx, w, h, t, p) {

@@ -196,7 +196,6 @@ exclude:
   - .github/
   - AGENTS.md
   - CLAUDE.md
-  - GUIA.md
   - PROMPT_AGENTES.md
   - al-folio-upgrade-report.md
   - bin/

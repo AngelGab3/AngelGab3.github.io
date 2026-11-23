@@ -219,7 +219,6 @@ html[data-theme="dark"].is-scrolled #navbar {
  * Selector de idioma (ES / EN) & Layout Navbar
  * ========================================================================== */
 
-.lang-en,
 html:not([data-lang="en"]) .lang-en,
 html:not([data-lang="en"]) .profile .more-info .lang-en {
   display: none !important;
@@ -228,7 +227,8 @@ html[data-lang="en"] .lang-es,
 html[data-lang="en"] .profile .more-info .lang-es {
   display: none !important;
 }
-html[data-lang="en"] .lang-en {
+html[data-lang="en"] .lang-en,
+html[data-lang="en"] .profile .more-info .lang-en {
   display: block;
 }
 html[data-lang="en"] span.lang-en,
