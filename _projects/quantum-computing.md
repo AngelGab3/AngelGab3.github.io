@@ -6,11 +6,19 @@ title_en: Quantum Computing — Implementations & Notes
 description: Algoritmos cuánticos, compuertas unitarias, simulación en esfera de Bloch y cuadernos en Qiskit.
 description_es: Cuadernos en Qiskit, compuertas lógicas, simulación de circuitos cuánticos y apuntes formales.
 description_en: Qiskit notebooks, quantum gates, circuit simulation, and mathematical derivations of quantum algorithms.
-importance: 2
+importance: 1
 category: Física Computacional
 category_es: Física Computacional
 category_en: Computational Physics
 github: https://github.com/AngelGab3/Quantum-Computing
+sim: bloch
+bento_span: 7
+formula: "|ψ⟩ = cos(θ/2)|0⟩ + e^{iφ}sin(θ/2)|1⟩"
+tags:
+  - Qiskit
+  - Hilbert Spaces
+  - Bloch Sphere
+  - Python
 ---
 
 <div class="lang lang-es" markdown="1">

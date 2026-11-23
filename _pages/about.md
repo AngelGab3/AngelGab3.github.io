@@ -32,17 +32,24 @@ latest_posts:
 
 <div class="lang lang-es" markdown="1">
 
-Soy estudiante de la **Licenciatura en Física** dentro del **Programa de Honores** en la [Universidad de las Américas Puebla (UDLAP)](https://www.udlap.mx/), con **Beca de Excelencia Académica STEM (100% de colegiatura)** y promedio general de **9.5/10**. Me motiva comprender cómo el cómputo y las matemáticas ayudan a explicar los fenómenos del mundo natural.
+<div class="kinetic-role-bar">
+  <span class="kinetic-dot" aria-hidden="true"></span>
+  <span class="kinetic-prefix">LAB://COMPUTATIONAL_PHYSICS</span>
+  <span class="kinetic-sep" aria-hidden="true">·</span>
+  <span class="kinetic-role-text" data-roles="Física Computacional|Computación Cuántica|Geometría de la Información|Simulaciones Numéricas|Deep Learning &amp; Astrofísica">Física Computacional</span>
+</div>
 
-Combino la formación teórica y matemática de la física con experiencia práctica en **aprendizaje profundo (_deep learning_)**, **astrofísica computacional**, **computación cuántica**, diseño de configuraciones experimentales e integración **hardware–software**. Busco activamente oportunidades y estancias de investigación para desarrollar métodos y modelos computacionales que ayuden a interpretar datos científicos y profundizar nuestra comprensión de los procesos físicos subyacentes.
+Soy estudiante de la **Licenciatura en Física** dentro del **Programa de Honores** en la [Universidad de las Américas Puebla (UDLAP)](https://www.udlap.mx/), con **Beca de Excelencia Académica STEM (100% de colegiatura)** y promedio general de **9.5/10**. Me motiva comprender cómo el cómputo, la geometría y las matemáticas ayudan a explicar los fenómenos del mundo natural.
+
+Combino la formación teórica y matemática de la física con experiencia práctica en **computación cuántica**, **geometría diferencial y de la información**, **simulaciones numéricas**, **aprendizaje profundo (_deep learning_)**, **astrofísica computacional** e integración **hardware–software**. Busco activamente oportunidades y estancias de investigación para desarrollar métodos y modelos computacionales que ayuden a interpretar datos científicos y profundizar nuestra comprensión de los procesos físicos subyacentes.
 
 <div class="hero-highlights">
   <div class="hero-stat">
-    <div class="hero-stat-value">GPA 9.5 / 10</div>
+    <div class="hero-stat-value">GPA <span class="count-num" data-count-target="9.5" data-count-decimals="1">9.5</span> / 10</div>
     <p class="hero-stat-label">Programa de Honores UDLAP (Top 15%)</p>
   </div>
   <div class="hero-stat">
-    <div class="hero-stat-value">Beca 100%</div>
+    <div class="hero-stat-value">Beca <span class="count-num" data-count-target="100" data-count-decimals="0">100</span>%</div>
     <p class="hero-stat-label">Excelencia Académica STEM · UDLAP</p>
   </div>
   <div class="hero-stat">
@@ -50,7 +57,7 @@ Combino la formación teórica y matemática de la física con experiencia prác
     <p class="hero-stat-label">Final Iberoamericana Infomatrix 2026</p>
   </div>
   <div class="hero-stat">
-    <div class="hero-stat-value">34 IB · TOEFL 587</div>
+    <div class="hero-stat-value"><span class="count-num" data-count-target="34" data-count-decimals="0">34</span> IB · TOEFL <span class="count-num" data-count-target="587" data-count-decimals="0">587</span></div>
     <p class="hero-stat-label">Bachillerato Internacional · Bilingüe</p>
   </div>
 </div>
@@ -135,7 +142,7 @@ Combino la formación teórica y matemática de la física con experiencia prác
 
 ### Becas y Premios Destacados
 
-<div class="cv-grid-2">
+<div class="cv-grid-3">
 
 <div class="cv-entry">
   <div class="cv-date">2024 – 2028</div>
@@ -152,6 +159,15 @@ Combino la formación teórica y matemática de la física con experiencia prác
     <h4>Medalla de Oro Internacional y Clasificación a Argentina 2026 <span class="badge-award">Oro Internacional</span></h4>
     <p class="cv-meta"><a href="https://blog.udlap.mx/blog/2026/06/30/oro-para-estudiantes-de-la-udlap-en-certamen-iberoamericano-de-ciencia-y-tecnologia/" target="_blank" rel="noopener">Final Iberoamericana Infomatrix</a> · San Luis Potosí, México</p>
     <p>Máximo reconocimiento en la categoría de inteligencia artificial por el <em>Asistente Visual para Personas con Discapacidad Visual</em> (LLMs multimodales, YOLO y transmisión de video sobre Wi-Fi con Arduino UNO Q).</p>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-date">2026</div>
+  <div class="cv-body">
+    <h4>2.º Lugar — Hackatón Puebla 2026 <span class="badge-award">2.º Lugar</span></h4>
+    <p class="cv-meta"><a href="https://github.com/RoshTzsche/gota_poblana" target="_blank" rel="noopener">Reto Agua Microside · Gota Poblana (Equipo Pulse)</a> · Puebla, México</p>
+    <p>Sistema de monitoreo y dosificación adaptativa de pH para maximizar la eficacia del cloro libre (HOCl) bajo la norma NOM-127, con firmware ESP32-S3, app Flutter, MQTT y simulador físico.</p>
   </div>
 </div>
 
@@ -199,7 +215,9 @@ Combino la formación teórica y matemática de la física con experiencia prác
   <div class="cv-body">
     <div class="tech-pills" style="margin-top: 0;">
       <span class="tech-pill">Qiskit</span>
-      <span class="tech-pill">Métodos Numéricos</span>
+      <span class="tech-pill">Geometría Diferencial y de la Información</span>
+      <span class="tech-pill">Simulación Numérica</span>
+      <span class="tech-pill">Óptica Difractiva</span>
       <span class="tech-pill">C</span>
       <span class="tech-pill">MATLAB</span>
     </div>
@@ -225,7 +243,8 @@ Combino la formación teórica y matemática de la física con experiencia prác
   <div class="cv-body">
     <div class="tech-pills" style="margin-top: 0;">
       <span class="tech-pill"><i class="fa-solid fa-microchip"></i> Diseño de PCBs Personalizadas</span>
-      <span class="tech-pill">ESP32</span>
+      <span class="tech-pill">ESP32 / ESP32-S3</span>
+      <span class="tech-pill">Flutter / MQTT</span>
       <span class="tech-pill">Arduino</span>
       <span class="tech-pill">Raspberry Pi</span>
     </div>
@@ -265,17 +284,24 @@ Explora mis <a href="/proyectos/">proyectos</a>, <a href="/investigaciones/">inv
 
 <div class="lang lang-en" markdown="1">
 
-I am a **B.S. in Physics** undergraduate in the **Honors Program** at [Universidad de las Américas Puebla (UDLAP)](https://www.udlap.mx/), supported by a **Full Academic Excellence STEM Scholarship (100% Tuition)** with a **9.5/10** GPA. I am driven by curiosity about how computation and mathematics can help us understand the natural world.
+<div class="kinetic-role-bar">
+  <span class="kinetic-dot" aria-hidden="true"></span>
+  <span class="kinetic-prefix">LAB://COMPUTATIONAL_PHYSICS</span>
+  <span class="kinetic-sep" aria-hidden="true">·</span>
+  <span class="kinetic-role-text" data-roles="Computational Physics|Quantum Computing|Information Geometry|Numerical Simulations|Deep Learning &amp; Astrophysics">Computational Physics</span>
+</div>
 
-My work combines computational physics with hands-on experience in **deep learning**, **computational astrophysics**, **quantum computing**, experimental setup design, and **hardware–software integration**. I am actively seeking research opportunities to develop computational methods and models that help explain complex systems, interpret scientific data, and deepen our understanding of underlying physical processes.
+I am a **B.S. in Physics** undergraduate in the **Honors Program** at [Universidad de las Américas Puebla (UDLAP)](https://www.udlap.mx/), supported by a **Full Academic Excellence STEM Scholarship (100% Tuition)** with a **9.5/10** GPA. I am driven by curiosity about how computation, geometry, and mathematics can help us understand the natural world.
+
+My work combines computational physics with hands-on experience in **quantum computing**, **differential & information geometry**, **numerical simulations**, **deep learning**, **computational astrophysics**, and **hardware–software integration**. I am actively seeking research opportunities to develop computational methods and models that help explain complex systems, interpret scientific data, and deepen our understanding of underlying physical processes.
 
 <div class="hero-highlights">
   <div class="hero-stat">
-    <div class="hero-stat-value">GPA 9.5 / 10</div>
+    <div class="hero-stat-value">GPA <span class="count-num" data-count-target="9.5" data-count-decimals="1">9.5</span> / 10</div>
     <p class="hero-stat-label">UDLAP Honors Program (Top 15%)</p>
   </div>
   <div class="hero-stat">
-    <div class="hero-stat-value">100% Tuition</div>
+    <div class="hero-stat-value"><span class="count-num" data-count-target="100" data-count-decimals="0">100</span>% Tuition</div>
     <p class="hero-stat-label">STEM Excellence Scholarship · UDLAP</p>
   </div>
   <div class="hero-stat">
@@ -283,7 +309,7 @@ My work combines computational physics with hands-on experience in **deep learni
     <p class="hero-stat-label">Infomatrix Ibero-American Final 2026</p>
   </div>
   <div class="hero-stat">
-    <div class="hero-stat-value">34 IB · TOEFL 587</div>
+    <div class="hero-stat-value"><span class="count-num" data-count-target="34" data-count-decimals="0">34</span> IB · TOEFL <span class="count-num" data-count-target="587" data-count-decimals="0">587</span></div>
     <p class="hero-stat-label">IB Diploma · Bilingual ES / EN</p>
   </div>
 </div>
@@ -368,7 +394,7 @@ My work combines computational physics with hands-on experience in **deep learni
 
 ### Scholarships & Awards
 
-<div class="cv-grid-2">
+<div class="cv-grid-3">
 
 <div class="cv-entry">
   <div class="cv-date">2024 – 2028</div>
@@ -385,6 +411,15 @@ My work combines computational physics with hands-on experience in **deep learni
     <h4>International Gold Medalist &amp; Argentina 2026 Qualifier <span class="badge-award">International Gold</span></h4>
     <p class="cv-meta"><a href="https://blog.udlap.mx/blog/2026/06/30/oro-para-estudiantes-de-la-udlap-en-certamen-iberoamericano-de-ciencia-y-tecnologia/" target="_blank" rel="noopener">Ibero-American Infomatrix Final</a> · San Luis Potosí, Mexico</p>
     <p>Top honor in the AI development category for the <em>Visual Assistant for the Visually Impaired</em> (multimodal LLMs, YOLO object detection, and low-latency Wi-Fi video streaming using an Arduino UNO Q).</p>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-date">2026</div>
+  <div class="cv-body">
+    <h4>2nd Place — Hackatón Puebla 2026 <span class="badge-award">2nd Place</span></h4>
+    <p class="cv-meta"><a href="https://github.com/RoshTzsche/gota_poblana" target="_blank" rel="noopener">Microside Water Challenge · Gota Poblana (Equipo Pulse)</a> · Puebla, Mexico</p>
+    <p>Offline adaptive pH monitoring and dosing system maximizing free chlorine (HOCl) disinfection under NOM-127, combining ESP32-S3 firmware, a Flutter app, MQTT, and a deterministic physics simulator.</p>
   </div>
 </div>
 
@@ -432,7 +467,9 @@ My work combines computational physics with hands-on experience in **deep learni
   <div class="cv-body">
     <div class="tech-pills" style="margin-top: 0;">
       <span class="tech-pill">Qiskit</span>
-      <span class="tech-pill">Numerical Methods</span>
+      <span class="tech-pill">Differential &amp; Information Geometry</span>
+      <span class="tech-pill">Numerical Simulation</span>
+      <span class="tech-pill">Diffractive Optics</span>
       <span class="tech-pill">C</span>
       <span class="tech-pill">MATLAB</span>
     </div>
@@ -458,7 +495,8 @@ My work combines computational physics with hands-on experience in **deep learni
   <div class="cv-body">
     <div class="tech-pills" style="margin-top: 0;">
       <span class="tech-pill"><i class="fa-solid fa-microchip"></i> Custom PCB Design</span>
-      <span class="tech-pill">ESP32</span>
+      <span class="tech-pill">ESP32 / ESP32-S3</span>
+      <span class="tech-pill">Flutter / MQTT</span>
       <span class="tech-pill">Arduino</span>
       <span class="tech-pill">Raspberry Pi</span>
     </div>

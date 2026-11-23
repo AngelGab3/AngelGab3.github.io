@@ -6,11 +6,19 @@ title_en: GalaxyAE & MaNGA-DESOM — Computational Astrophysics
 description: Agrupamiento espectral de galaxias con Autoencoders y mapas autoorganizados profundos (DESOM).
 description_es: Tuberías computacionales para agrupamiento de galaxias por sus espectros mediante Autoencoders y DESOM.
 description_en: Computational astrophysics pipelines for spectroscopic galaxy clustering using Autoencoders and DESOM.
-importance: 1
+importance: 3
 category: Física Computacional
 category_es: Física Computacional
 category_en: Computational Physics
 github: https://github.com/AngelGab3/GalaxyAE
+sim: som-galaxy
+bento_span: 5
+formula: "z = f_θ(x) · DESOM Topology"
+tags:
+  - Autoencoders
+  - DESOM
+  - Astrophysics
+  - TensorFlow
 ---
 
 <div class="lang lang-es" markdown="1">

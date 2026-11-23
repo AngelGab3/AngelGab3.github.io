@@ -11,6 +11,14 @@ category: Inteligencia Artificial
 category_es: Inteligencia Artificial
 category_en: Artificial Intelligence
 github: https://github.com/AngelGab3/Deep-Learning-Projects
+sim: latent-flow
+bento_span: 12
+formula: "∇_g L(θ) = G⁻¹(θ) ∇L(θ)"
+tags:
+  - Information Geometry
+  - Manifolds
+  - PyTorch
+  - Unsupervised
 ---
 
 <div class="lang lang-es" markdown="1">

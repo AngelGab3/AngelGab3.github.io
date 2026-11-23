@@ -10,6 +10,16 @@
   document.documentElement.setAttribute("data-lang", lang);
   document.documentElement.setAttribute("lang", lang);
 
+  var reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  function prefersReducedMotion() {
+    return reducedMotionQuery.matches;
+  }
+
+  var finePointerQuery = window.matchMedia("(pointer: fine)");
+  function isFinePointer() {
+    return finePointerQuery.matches;
+  }
+
   var NAV_TRANSLATIONS = {
     "/": { es: "Inicio", en: "Home" },
     "/proyectos/": { es: "Proyectos", en: "Projects" },
@@ -26,8 +36,8 @@
     "/proyectos/": {
       title: { es: "Proyectos", en: "Projects" },
       desc: {
-        es: "Proyectos en física computacional, inteligencia artificial, robótica y desarrollo de software.",
-        en: "Projects in computational physics, artificial intelligence, robotics, and software development.",
+        es: "Proyectos en física computacional, computación cuántica, geometría de la información, simulaciones numéricas, IA y robótica.",
+        en: "Projects in computational physics, quantum computing, information geometry, numerical simulations, AI, and robotics.",
       },
     },
     "/investigaciones/": {
@@ -137,6 +147,36 @@
         en: "Qiskit notebooks, quantum gates, circuit simulation, and mathematical derivations of quantum algorithms.",
       },
     },
+    "/projects/gota-poblana/": {
+      title: {
+        es: "Gota Poblana — Control Adaptativo de pH y Cloración",
+        en: "Gota Poblana — Adaptive pH Water Control",
+      },
+      desc: {
+        es: "Monitoreo y dosificación adaptativa de pH para maximizar la eficacia del cloro (HOCl) con ESP32-S3, Flutter, MQTT y simulador determinista de firmware. 2.º lugar Hackatón Puebla 2026.",
+        en: "Adaptive pH monitoring and dosing to maximize active chlorine (HOCl) efficacy with ESP32-S3, Flutter, MQTT/WebSocket, and a deterministic firmware simulator. 2nd place Hackatón Puebla 2026.",
+      },
+    },
+    "/projects/diffractive-neural-networks/": {
+      title: {
+        es: "Redes Neuronales Difractivas (D²NN) — Óptica Computacional",
+        en: "Diffractive Deep Neural Networks (D²NN)",
+      },
+      desc: {
+        es: "Reproducción numérica y análisis teórico de redes neuronales ópticas de solo fase mediante espectro angular de banda limitada (Rayleigh–Sommerfeld) y cálculo de Wirtinger.",
+        en: "Numerical reproduction and theoretical analysis of visible-wavelength phase-only diffractive neural networks via band-limited angular spectrum propagation and Wirtinger calculus.",
+      },
+    },
+    "/projects/geometry-and-physics/": {
+      title: {
+        es: "Geometría Diferencial, Topología y Física Matemática",
+        en: "Differential Geometry, Topology & Symplectic Physics",
+      },
+      desc: {
+        es: "Desarrollo formal en LaTeX de geometría visual, tensor métrico g_ij, cálculo exterior de Cartan, cohomología/topología física y mecánica simpléctica en T*Q.",
+        en: "Formal LaTeX notes bridging vector calculus with differential forms, Cartan moving frames, Riemannian metric tensors g_ij, physical topology, and symplectic mechanics on T*Q.",
+      },
+    },
   };
 
   function normalizePath(href) {
@@ -182,6 +222,8 @@
     return l === "en" ? "ES" : "EN";
   }
 
+  var onLanguageChangedCallbacks = [];
+
   function insertLanguageButton() {
     var currentLang = document.documentElement.getAttribute("data-lang") || "es";
     applyLanguageToUI(currentLang);
@@ -205,6 +247,11 @@
       } catch (e) {}
       btn.textContent = labelFor(next);
       applyLanguageToUI(next);
+      onLanguageChangedCallbacks.forEach(function (cb) {
+        try {
+          cb(next);
+        } catch (err) {}
+      });
     });
 
     themeBtn.parentNode.insertBefore(btn, themeBtn);
@@ -260,9 +307,381 @@
     } catch (e) {}
   }
 
+  /* =========================================================================
+   * SPOTLIGHT CURSOR GLOW ON CARDS
+   * ========================================================================= */
+  function initSpotlight() {
+    if (!isFinePointer()) return;
+    var cards = document.querySelectorAll(".cv-entry, .cert-card, .bento-card, .hero-stat, .event-cover-card");
+    cards.forEach(function (card) {
+      card.addEventListener("pointermove", function (e) {
+        var r = card.getBoundingClientRect();
+        card.style.setProperty("--mx", e.clientX - r.left + "px");
+        card.style.setProperty("--my", e.clientY - r.top + "px");
+      });
+      card.addEventListener("pointerleave", function () {
+        card.style.setProperty("--mx", "-999px");
+        card.style.setProperty("--my", "-999px");
+      });
+    });
+  }
+
+  /* =========================================================================
+   * 3D PERSPECTIVE TILT ON PROFILE & BENTO CARDS
+   * ========================================================================= */
+  function attachTilt(el, maxDeg) {
+    if (!el || !isFinePointer() || prefersReducedMotion()) return;
+    el.addEventListener("pointermove", function (e) {
+      var r = el.getBoundingClientRect();
+      if (!r.width || !r.height) return;
+      var nx = (e.clientX - r.left) / r.width - 0.5;
+      var ny = (e.clientY - r.top) / r.height - 0.5;
+      var rx = (-ny * maxDeg * 2).toFixed(2);
+      var ry = (nx * maxDeg * 2).toFixed(2);
+      el.style.transform = "perspective(900px) rotateX(" + rx + "deg) rotateY(" + ry + "deg) translateY(-2px)";
+    });
+    el.addEventListener("pointerleave", function () {
+      el.style.transform = "";
+    });
+  }
+
+  function initProfileAndCardTilt() {
+    var profileFig = document.querySelector(".post .profile figure");
+    attachTilt(profileFig, 5.5);
+
+    var bentoCards = document.querySelectorAll(".bento-card");
+    bentoCards.forEach(function (card) {
+      attachTilt(card, 2.2);
+    });
+  }
+
+  /* =========================================================================
+   * KINETIC TEXT-SCRAMBLE DECODER
+   * ========================================================================= */
+  function initKineticRoles() {
+    var nodes = document.querySelectorAll(".kinetic-role-text[data-roles]");
+    if (!nodes.length) return;
+
+    var GLYPHS = "ψφλ∂∇∑∫⊗ΩΔ01";
+
+    nodes.forEach(function (el) {
+      var raw = el.getAttribute("data-roles") || "";
+      var roles = raw
+        .split("|")
+        .map(function (s) {
+          return s.trim();
+        })
+        .filter(Boolean);
+      if (roles.length < 2) return;
+
+      var idx = 0;
+      var animFrame = 0;
+
+      function scrambleTo(target) {
+        if (prefersReducedMotion()) {
+          el.textContent = target;
+          return;
+        }
+        if (animFrame) window.cancelAnimationFrame(animFrame);
+        var duration = 640;
+        var start = performance.now();
+
+        function step(now) {
+          var progress = Math.min(1, (now - start) / duration);
+          var revealed = Math.floor(progress * target.length);
+          var out = "";
+          for (var i = 0; i < target.length; i++) {
+            var ch = target[i];
+            if (i < revealed || ch === " " || ch === "&") {
+              out += ch;
+            } else {
+              out += GLYPHS[Math.floor((i * 7 + now * 0.05) % GLYPHS.length)];
+            }
+          }
+          el.textContent = out;
+          if (progress < 1) {
+            animFrame = window.requestAnimationFrame(step);
+          } else {
+            el.textContent = target;
+            animFrame = 0;
+          }
+        }
+        animFrame = window.requestAnimationFrame(step);
+      }
+
+      if (!prefersReducedMotion()) {
+        window.setInterval(function () {
+          if (document.hidden || el.offsetParent === null) return;
+          idx = (idx + 1) % roles.length;
+          scrambleTo(roles[idx]);
+        }, 3400);
+      }
+
+      onLanguageChangedCallbacks.push(function () {
+        if (el.offsetParent !== null) {
+          scrambleTo(roles[idx]);
+        }
+      });
+    });
+  }
+
+  /* =========================================================================
+   * ANIMATED METRIC COUNTERS
+   * ========================================================================= */
+  function animateCounter(el) {
+    if (!el || el.getAttribute("data-counted") === "1") return;
+    if (el.offsetParent === null) return;
+    var target = parseFloat(el.getAttribute("data-count-target"));
+    if (isNaN(target)) return;
+    var decimals = parseInt(el.getAttribute("data-count-decimals") || "0", 10);
+    el.setAttribute("data-counted", "1");
+
+    if (prefersReducedMotion()) {
+      el.textContent = target.toFixed(decimals);
+      return;
+    }
+
+    var duration = 660;
+    var start = performance.now();
+    function tick(now) {
+      var p = Math.min(1, (now - start) / duration);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = target * eased;
+      el.textContent = val.toFixed(decimals);
+      if (p < 1) {
+        window.requestAnimationFrame(tick);
+      } else {
+        el.textContent = target.toFixed(decimals);
+      }
+    }
+    window.requestAnimationFrame(tick);
+  }
+
+  function initCounters() {
+    var counters = document.querySelectorAll(".count-num[data-count-target]");
+    if (!counters.length) return;
+
+    function checkVisibleCounters() {
+      counters.forEach(function (el) {
+        if (el.offsetParent === null) return;
+        var rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight + 40 && rect.bottom > -40) {
+          animateCounter(el);
+        }
+      });
+    }
+
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      counters.forEach(function (c) {
+        io.observe(c);
+      });
+    } else {
+      checkVisibleCounters();
+    }
+
+    onLanguageChangedCallbacks.push(function () {
+      window.setTimeout(checkVisibleCounters, 20);
+    });
+  }
+
+  /* =========================================================================
+   * STAGGERED SCROLL REVEAL
+   * ========================================================================= */
+  function initScrollReveals() {
+    var targets = document.querySelectorAll(
+      ".cv-entry, .cert-card, .bento-card, .hero-stat, .event-cover-card, h2.category, .post article h3, .event-section-header"
+    );
+    if (!targets.length) return;
+
+    if (prefersReducedMotion() || !("IntersectionObserver" in window)) {
+      targets.forEach(function (el) {
+        el.classList.add("is-visible");
+      });
+      return;
+    }
+
+    document.documentElement.classList.add("motion-ready");
+
+    targets.forEach(function (el, idx) {
+      el.classList.add("reveal-item");
+      var delay = (idx % 4) * 65;
+      el.style.setProperty("--reveal-delay", delay + "ms");
+    });
+
+    function revealVisibleItems(instant) {
+      var vh = window.innerHeight || 800;
+      targets.forEach(function (el) {
+        if (el.offsetParent === null) return;
+        var r = el.getBoundingClientRect();
+        if (r.top <= vh + 40) {
+          if (instant) {
+            el.classList.add("is-instant");
+            el.style.setProperty("--reveal-delay", "0ms");
+          }
+          el.classList.add("is-visible");
+        }
+      });
+    }
+
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.04, rootMargin: "0px 0px -20px 0px" }
+    );
+
+    targets.forEach(function (el) {
+      io.observe(el);
+    });
+
+    revealVisibleItems(false);
+    window.setTimeout(function () {
+      revealVisibleItems(false);
+    }, 900);
+
+    onLanguageChangedCallbacks.push(function () {
+      revealVisibleItems(true);
+    });
+
+    initScrollReveals.refresh = function () {
+      revealVisibleItems(true);
+    };
+  }
+
+  /* =========================================================================
+   * NAVBAR GLASS STATE & MAGNETIC BUTTONS
+   * ========================================================================= */
+  function initNavbarAndMagnetics() {
+    function updateScrollState() {
+      document.documentElement.classList.toggle("is-scrolled", window.scrollY > 16);
+    }
+    updateScrollState();
+    window.addEventListener("scroll", updateScrollState, { passive: true });
+
+    if (!isFinePointer() || prefersReducedMotion()) return;
+    var magneticButtons = document.querySelectorAll(".btn-repo, .cv-download-btn, .bento-filter-btn");
+    magneticButtons.forEach(function (btn) {
+      btn.addEventListener("pointermove", function (e) {
+        var r = btn.getBoundingClientRect();
+        var dx = ((e.clientX - (r.left + r.width / 2)) / (r.width / 2)) * 4;
+        var dy = ((e.clientY - (r.top + r.height / 2)) / (r.height / 2)) * 3;
+        btn.style.transform = "translate3d(" + dx.toFixed(1) + "px, " + dy.toFixed(1) + "px, 0)";
+      });
+      btn.addEventListener("pointerleave", function () {
+        btn.style.transform = "";
+      });
+    });
+  }
+
+  /* =========================================================================
+   * BENTO CATEGORY FILTERS
+   * ========================================================================= */
+  function initBentoFilters() {
+    var filterButtons = document.querySelectorAll(".bento-filter-btn[data-filter]");
+    var sections = document.querySelectorAll("[data-bento-section]");
+    if (!filterButtons.length || !sections.length) return;
+
+    function applyFilter(slug) {
+      filterButtons.forEach(function (btn) {
+        var active = btn.getAttribute("data-filter") === slug;
+        btn.classList.toggle("is-active", active);
+        btn.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+
+      sections.forEach(function (sec) {
+        var secSlug = sec.getAttribute("data-bento-section");
+        var show = slug === "all" || secSlug === slug;
+        sec.hidden = !show;
+        sec.style.display = show ? "" : "none";
+      });
+
+      if (typeof initScrollReveals.refresh === "function") {
+        window.requestAnimationFrame(initScrollReveals.refresh);
+      }
+    }
+
+    filterButtons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        applyFilter(btn.getAttribute("data-filter") || "all");
+      });
+    });
+  }
+
+  /* =========================================================================
+   * CIRCULAR VIEW TRANSITION ON THEME TOGGLE
+   * ========================================================================= */
+  function initThemeReveal() {
+    var themeBtn = document.getElementById("light-toggle");
+    if (!themeBtn) return;
+    if (typeof document.startViewTransition !== "function") return;
+    if (typeof toggleThemeSetting !== "function") return;
+
+    themeBtn.addEventListener(
+      "click",
+      function (e) {
+        if (prefersReducedMotion()) return;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        var rect = themeBtn.getBoundingClientRect();
+        var x = rect.left + rect.width / 2;
+        var y = rect.top + rect.height / 2;
+        var endRadius = Math.hypot(Math.max(x, window.innerWidth - x), Math.max(y, window.innerHeight - y));
+
+        document.documentElement.classList.add("theme-transitioning");
+        var vt = document.startViewTransition(function () {
+          toggleThemeSetting();
+        });
+
+        vt.ready
+          .then(function () {
+            document.documentElement.animate(
+              {
+                clipPath: ["circle(0px at " + x + "px " + y + "px)", "circle(" + endRadius + "px at " + x + "px " + y + "px)"],
+              },
+              {
+                duration: 500,
+                easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+                pseudoElement: "::view-transition-new(root)",
+              }
+            );
+          })
+          .catch(function () {});
+
+        vt.finished.finally(function () {
+          document.documentElement.classList.remove("theme-transitioning");
+        });
+      },
+      true
+    );
+  }
+
   function onReady() {
     insertLanguageButton();
     initPhotoSwipeGalleries();
+    initThemeReveal();
+    initNavbarAndMagnetics();
+    initSpotlight();
+    initProfileAndCardTilt();
+    initKineticRoles();
+    initCounters();
+    initScrollReveals();
+    initBentoFilters();
   }
 
   if (document.readyState === "loading") {

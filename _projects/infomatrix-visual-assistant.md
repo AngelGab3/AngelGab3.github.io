@@ -11,6 +11,16 @@ category: Inteligencia Artificial
 category_es: Inteligencia Artificial
 category_en: Artificial Intelligence
 github: https://github.com/AngelGab3
+sim: vision-scan
+bento_span: 7
+formula: "YOLO + VLM → Real-Time Audio"
+badge_es: "Oro Internacional 2026"
+badge_en: "International Gold 2026"
+tags:
+  - Multimodal LLMs
+  - YOLO
+  - Arduino UNO Q
+  - Edge AI
 ---
 
 <div class="lang lang-es" markdown="1">

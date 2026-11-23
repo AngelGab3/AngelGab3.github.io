@@ -11,6 +11,16 @@ category: Desarrollo iOS
 category_es: Desarrollo iOS
 category_en: iOS Development
 github: https://github.com/AngelGab3/LAMBDACODE-Bloom
+sim: swift-orbit
+bento_span: 12
+formula: "SwiftUI · Native iOS Architecture"
+badge_es: "Finalista Nacional"
+badge_en: "National Finalist"
+tags:
+  - Swift
+  - SwiftUI
+  - iOS
+  - Hackathon
 ---
 
 <div class="lang lang-es" markdown="1">

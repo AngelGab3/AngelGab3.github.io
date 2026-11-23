@@ -9,11 +9,11 @@ last_name: Munguía Velázquez
 contact_note: >
   <span class="lang-es">La mejor forma de contactarme es por LinkedIn o correo institucional.</span><span class="lang-en">Best way to reach me is via LinkedIn or institutional email.</span>
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Portafolio académico de Ángel Gabriel Munguía Velázquez — Estudiante de Física (Programa de Honores, UDLAP). Física computacional, aprendizaje profundo, astrofísica y computación cuántica.
+  Portafolio académico de Ángel Gabriel Munguía Velázquez — Estudiante de Física (Programa de Honores, UDLAP). Física computacional, computación cuántica, geometría de la información, simulaciones numéricas y aprendizaje profundo.
 footer_text: >
   Desarrollado con <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> y basado en <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
   Alojado en <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: física computacional, deep learning, UDLAP, portafolio, machine learning
+keywords: física computacional, computación cuántica, geometría de la información, simulaciones numéricas, deep learning, UDLAP, portafolio, machine learning
 lang: es # idioma del sitio
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -513,7 +513,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Inter:300,400,500,600,700|Space+Grotesk:400,500,600,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Inter:300,400,500,600,700|Space+Grotesk:400,500,600,700|JetBrains+Mono:400,500,600|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

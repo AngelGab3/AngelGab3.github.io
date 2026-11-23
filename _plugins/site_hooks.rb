@@ -22,18 +22,25 @@ module PortfolioSiteHooks
     HTML
 
     css_tags = <<~HTML.chomp
+      <meta name="view-transition" content="same-origin">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.css" crossorigin="anonymous">
       <link rel="stylesheet" href="#{baseurl}/assets/css/custom.css">
     HTML
 
+    quantum_js_tag = %(<script src="#{baseurl}/assets/js/quantum-lab.js" defer></script>)
     js_tag = %(<script src="#{baseurl}/assets/js/site-enhancements.js" defer></script>)
 
     html = doc.output
     unless html.include?("/assets/css/custom.css")
       html = html.sub("</head>", "#{lang_init_script}\n#{css_tags}\n</head>")
     end
-    if html.include?("</body>") && !html.include?("/assets/js/site-enhancements.js")
-      html = html.sub("</body>", "#{js_tag}\n</body>")
+    if html.include?("</body>")
+      unless html.include?("/assets/js/quantum-lab.js")
+        html = html.sub("</body>", "#{quantum_js_tag}\n</body>")
+      end
+      unless html.include?("/assets/js/site-enhancements.js")
+        html = html.sub("</body>", "#{js_tag}\n</body>")
+      end
     end
     doc.output = html
   end

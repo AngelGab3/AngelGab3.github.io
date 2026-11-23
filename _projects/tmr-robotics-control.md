@@ -6,11 +6,19 @@ title_en: Robotics & Control Systems — TMR
 description: Electrónica y control para robots autónomos (Arduino a PCBs personalizadas con ESP32).
 description_es: Diseño de hardware y sistemas de control para robots autónomos en el Torneo Mexicano de Robótica (PCBs con ESP32).
 description_en: Hardware and control systems engineering for autonomous robots at the Mexican Robotics Tournament (custom ESP32 PCBs).
-importance: 1
+importance: 2
 category: Robótica y Hardware
 category_es: Robótica y Hardware
 category_en: Robotics & Hardware
 github: https://github.com/AngelGab3/sillodromo-chair-control
+sim: pcb-signal
+bento_span: 5
+formula: "u(t) = K_p e + K_i∫e + K_d ė"
+tags:
+  - ESP32
+  - Custom PCB
+  - Embedded Control
+  - C/C++
 ---
 
 <div class="lang lang-es" markdown="1">
