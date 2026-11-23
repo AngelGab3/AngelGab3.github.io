@@ -1,4 +1,4 @@
-# ⚛️ AngelGab3.github.io — Computational Physics Portfolio
+# AngelGab3.github.io — Computational Physics Portfolio
 
 <div align="center">
 
