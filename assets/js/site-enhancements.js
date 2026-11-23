@@ -523,7 +523,7 @@
       targets.forEach(function (el) {
         if (el.offsetParent === null) return;
         var r = el.getBoundingClientRect();
-        if (r.top <= vh + 40) {
+        if (r.top <= vh + 140) {
           if (instant) {
             el.classList.add("is-instant");
             el.style.setProperty("--reveal-delay", "0ms");
@@ -542,12 +542,24 @@
           }
         });
       },
-      { threshold: 0.04, rootMargin: "0px 0px -20px 0px" }
+      { threshold: 0.01, rootMargin: "0px 0px 100px 0px" }
     );
 
     targets.forEach(function (el) {
       io.observe(el);
     });
+
+    var scrollRaf = 0;
+    function scheduleRevealCheck() {
+      if (scrollRaf) return;
+      scrollRaf = window.requestAnimationFrame(function () {
+        scrollRaf = 0;
+        revealVisibleItems(false);
+      });
+    }
+
+    window.addEventListener("scroll", scheduleRevealCheck, { passive: true });
+    window.addEventListener("resize", scheduleRevealCheck, { passive: true });
 
     revealVisibleItems(false);
     window.setTimeout(function () {
@@ -556,6 +568,11 @@
 
     onLanguageChangedCallbacks.push(function () {
       revealVisibleItems(true);
+      targets.forEach(function (el) {
+        if (!el.classList.contains("is-visible")) {
+          io.observe(el);
+        }
+      });
     });
 
     initScrollReveals.refresh = function () {
